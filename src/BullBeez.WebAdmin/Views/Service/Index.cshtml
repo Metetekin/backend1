@@ -1,0 +1,480 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" id="serviceModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Servis Yönetim İşlemi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="card-body col-md-6">
+                        <form class="form-horizontal form-material mx-2" id="frmServiceModal">
+                            <input type="hidden" name="Id" id="Id">
+                            <div class="form-group">
+                                <label class="col-md-12">Servis Adı</label>
+                                <div class="col-md-12">
+                                    <input type="text" name="ServiceName" id="ServiceName" class="form-control form-control-line">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12">Tutar</label>
+                                <div class="col-md-12">
+                                    <input type="number" name="Amount" id="Amount" class="form-control form-control-line">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12">İndirimsiz Tutar</label>
+                                <div class="col-md-12">
+                                    <input type="number" name="OldAmount" id="OldAmount" class="form-control form-control-line">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12">Servis İkon</label>
+                                <div class="col-md-12">
+                                    <input type="text" name="ServiceIcon" id="ServiceIcon" class="form-control form-control-line">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12">Açıklama</label>
+                                <div class="col-md-12">
+                                    <input type="text" name="Description" id="Description" class="form-control form-control-line">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" onclick="SaveServiceData()" class="btn btn-primary">Servis Kaydet</button>
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                            <div class="form-group" id="divQuestionHeader">
+                                <div class="row">
+                                    <label class="col-sm-8">Soru Listesi</label>
+                                    <div class="col-sm-4">
+                                        <button type="button" onclick="AddQuestionData()" class="col-md-12 btn btn-primary">Yeni Soru Ekle</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="divQuestionTable">
+                                <div class="col-md-12">
+                                    <table class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline collapsed">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width:40px;">Id</th>
+                                                <th scope="col">Soru</th>
+                                                <th scope="col">Soru Tipi</th>
+                                                <th scope="col" style="width:80px;"></th>
+                                                <th scope="col" style="width:80px;"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tblQestions"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-body col-md-6" id="divServisQuestionAndOption">
+                        <div class="row">
+                            <div class="card-body col-md-12">
+                                <form class="form-horizontal form-material mx-2" id="frmQuestionModal">
+                                    <input type="hidden" name="ServiceId" id="ServiceId">
+                                    <input type="hidden" name="QuestionId" id="QuestionId">
+                                    <div class="form-group">
+                                        <label class="col-md-12">Soru</label>
+                                        <div class="col-md-12">
+                                            <input type="text" name="Question" id="Question" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-12">Soru Tipi</label>
+                                        <div class="col-sm-12">
+                                            <select class="form-select shadow-none form-control-line" id="QuestionType" name="QuestionType">
+                                                <option value="1">Seçim Yapılabilir</option>
+                                                <option value="2">Text Alan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" onclick="SaveServiceQuestionData()" class="btn btn-primary">Soru Kaydet</button>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                    <div class="form-group" id="divQuestionHeader">
+                                        <div class="row">
+                                            <label class="col-sm-8">Seçenek Listesi</label>
+                                            <div class="col-sm-4">
+                                                <button type="button" onclick="AddQuestionOptionData()" class="col-md-12 btn btn-primary">Yeni Seçenek Ekle</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="divQuestionOptionTable">
+                                        <div class="col-md-12">
+                                            <table class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline collapsed">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="width:40px;">Id</th>
+                                                        <th scope="col">Seçenek</th>
+                                                        <th scope="col" style="width:80px;"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tblQestionsOption"></tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row" id="divQuestionOption">
+                            <div class="card-body col-md-12">
+                                <form class="form-horizontal form-material mx-2" id="frmQuestionOptionModal">
+                                    <input type="hidden" name="ServiceId2" id="ServiceId2">
+                                    <input type="hidden" name="QuestionId2" id="QuestionId2">
+                                    <input type="hidden" name="OptionId" id="OptionId">
+                                    <div class="form-group">
+                                        <label class="col-md-12">Seçim içeriği</label>
+                                        <div class="col-md-12">
+                                            <input type="text" name="Option" id="Option" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" onclick="SaveQuestionOtionData()" class="btn btn-primary">Soru için Seçim Kaydet</button>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" id="uyariModal">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Uyarı</h5>
+                <button type="button" class="close" onclick="CloseModal('uyariModal')" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <form class="form-horizontal form-material mx-2" id="frmUyariModal">
+                        <div class="form-group">
+                            <label class="col-md-12" id="labelInfo">Tip Adı</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="CloseModal('uyariModal')">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card" style="padding:20px;">
+            <div class="card-body">
+                <!-- title -->
+                <div class="d-md-flex">
+                    <div class="ms-auto">
+                        <div class="dl">
+                            <button onclick="AddServiceData()" class="btn btn-success text-white">Ekle</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- title -->
+            </div>
+            <div class="table-responsive" style="min-width:90%">
+                <table class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline collapsed" id="setupList">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width:40px;">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Tutar</th>
+                            <th scope="col">Açıklma</th>
+                            <th scope="col" style="width:80px;"></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            LoadDataSource();
+
+        });
+
+        function LoadDataSource() {
+
+            $('#setupList').DataTable({
+                "destroy": true,
+                "processing": true,
+                "serverSide": true,
+                "info": true,
+                "filter": false,
+                "searching": true,
+                "language": {
+                    "url":  "@string.Format("{0}://{1}{2}", Request.Url.Scheme, Request.Url.Authority, Url.Content("~"))/assets/dist/js/datatableTR.js"
+
+                },
+                "ajax": {
+                    "url": "/Service/GetServiceList",
+                    "type": "POST",
+                    //"data": {
+                    //    "errorType": $('#ErrorType').val()
+                    //}
+                },
+                "columns": [
+                    { "data": "Id" },
+                    { "data": "ServiceName", "orderable": false },
+                    { "data": "Amount", "orderable": false },
+                    { "data": "Description", "orderable": false },
+                    {
+                        "data": "Id",
+                        "orderable": false,
+                        "render": function (data, type, row, meta) {
+                            var a = '<button onclick="ShowServiceData(' + row.Id + ')" class="btn btn-success text-white">Göster</button>'
+
+                            return a;
+                        }
+                    }
+
+                ]
+            });
+        }
+
+        var serviceId = 0;
+        var questionList = null;
+        function ShowServiceData(id)
+        {
+            $('#ServiceId').val(id);
+            $('#ServiceId2').val(id);
+            $('#divServisQuestionAndOption').show();
+            $('#divQuestionTable').show();
+            $('#divQuestionHeader').show();
+            Form.Reset('frmServiceModal');
+            $.ajax({
+                url: "/Service/GetServiceById",
+                type: "Post",
+                    data: {
+                        Id: id,
+                    }
+            }).done(function (response) {
+                serviceId = response.Id
+                Form.SetData('frmServiceModal', response);
+                questionList = response.QuestionList;
+                SetQuestionList(response.QuestionList);
+                $('#serviceModal').modal('show');
+            });
+
+        }
+
+        function SetQuestionList(questionList)
+        {
+            var $html = '';
+            $.each(questionList, function (index, item) {
+                $html += '<tr><td>' + item.QuestionId + '</td><td>' + item.Question + '</td>' +
+                    '<td>' + item.QuestionType + '</td><td><button onclick="Delete(' + item.QuestionId + ')" class="btn btn-danger  text-white">Sil</button></td>' +
+                    '<td><button type="button" onclick="UpdateQuestion(' + item.QuestionId + ')" class="btn btn-success text-white">Güncelle</button></td></tr>';
+
+            });
+            UpdateQuestion(questionList[0].QuestionId);
+            $('#tblQestions').append($html);
+        }
+
+
+
+        var questionData = null;
+        function UpdateQuestion(id) {
+            questionData = questionList.filter(word => word.QuestionId == id);
+            Form.SetData('frmQuestionModal', questionData[0]);
+            $('#ServiceId').val(serviceId);
+            $('#QuestionId2').val(id);
+            questionId = id;
+
+            SetQuestionOptionList(questionData[0].OptionList);
+
+            if (questionData[0].QuestionType == 1) {
+                $('#divQuestionList').show();
+            }
+            else {
+                $('#divQuestionList').hide();
+            }
+
+        }
+
+        function AddQuestionData() {
+
+            $('#ServiceId').val(serviceId);
+            $('#QuestionId').val(0);
+            $('#Question').val('');
+            $('#tblQestionsOption').html('');
+
+        }
+
+        var questionId = 0;
+        var optionList = null;
+        function SetQuestionOptionList(questionOptionList) {
+            var $html = '';
+            $('#tblQestionsOption').html('');
+            optionList = questionOptionList;
+            $.each(questionOptionList, function (index, item) {
+
+                $html += '<tr><td>' + item.OptionId + '</td><td>' + item.Option + '</td>' +
+                    '<td><button type="button" onclick="UpdateQuestionOption(' + item.OptionId + ')" class="btn btn-success text-white">Güncelle</button></td></tr>';
+
+            });
+            $('#tblQestionsOption').append($html);
+        }
+
+        function UpdateQuestionOption(id)
+        {
+            var data = optionList.filter(word => word.OptionId == id);
+            $('#ServiceId2').val(serviceId);
+            $('#QuestionId2').val(questionId);
+            $('#OptionId').val(id);
+            $('#Option').val(data[0].Option);
+        }
+
+        function AddQuestionOptionData()
+        {
+            $('#ServiceId2').val(serviceId);
+            $('#QuestionId2').val(questionId);
+            $('#OptionId').val(0);
+            $('#Option').val('');
+        }
+
+
+        function AddServiceData() {
+            $('#divServisQuestionAndOption').hide();
+            $('#divQuestionTable').hide();
+            $('#divQuestionHeader').hide();
+            Form.Reset('frmServiceModal');
+            $('#Amount').val('');
+            $('#OldAmount').val('');
+            $('#serviceModal').modal('show');
+        }
+
+        function SaveServiceData() {
+            if ($('#ServiceName').val() == '') {
+
+                document.getElementById('labelInfo').innerHTML = 'Lütfen servis adını doldurunuz!';
+                $('#uyariModal').modal('show');
+                return;
+            }
+
+            if ($('#Amount').val() == '') {
+
+                document.getElementById('labelInfo').innerHTML = 'Lütfen servis ücretini giriniz!';
+                $('#uyariModal').modal('show');
+                return;
+            }
+
+            if ($('#ServiceIcon').val() == '') {
+
+                document.getElementById('labelInfo').innerHTML = 'Lütfen servis iconu giriniz!';
+                $('#uyariModal').modal('show');
+                return;
+            }
+
+            var form = $("#frmServiceModal");
+            var param = form.serializeArray();
+            $.ajax({
+                url: "/Service/ServiceInsetOrUpdate",
+                type: "Post",
+                data: param
+            }).done(function (response) {
+                $('#serviceModal').modal('hide');
+                LoadDataSource();
+            });
+
+        }
+
+        function SaveServiceQuestionData() {
+
+            if ($('#Question').val() == '') {
+
+                document.getElementById('labelInfo').innerHTML = 'Lütfen soru metnin doldurunuz!';
+                $('#uyariModal').modal('show');
+                return;
+            }
+
+
+            var form = $("#frmQuestionModal");
+            var param = form.serializeArray();
+            $.ajax({
+                url: "/Service/ServiceQuestionInsetOrUpdate",
+                type: "Post",
+                data: param
+            }).done(function (response) {
+                $('#QuestionId').val(0);
+                $('#Question').val('');
+                ShowServiceData(serviceId);
+
+            });
+
+        }
+
+        function SaveQuestionOtionData()
+        {
+            if ($('#QuestionId2').val() == '') {
+
+                document.getElementById('labelInfo').innerHTML = 'Lütfen bir soru seçiniz!';
+                $('#uyariModal').modal('show');
+                return;
+            }
+            if ($('#Option').val() == '') {
+                document.getElementById('labelInfo').innerHTML = 'Seçim değerini boş bırakmayınız!';
+                $('#uyariModal').modal('show');
+                return;
+            }
+            var form = $("#frmQuestionOptionModal");
+            var param = form.serializeArray();
+            $.ajax({
+                url: "/Service/QuestionOptionInsetOrUpdate",
+                type: "Post",
+                data: param
+            }).done(function (response) {
+                ShowServiceData(serviceId);
+
+            });
+        }
+
+
+        function CloseModal(modalId)
+        {
+            $('#' + modalId).modal('hide');
+        }
+
+    </script>
+}
+
+

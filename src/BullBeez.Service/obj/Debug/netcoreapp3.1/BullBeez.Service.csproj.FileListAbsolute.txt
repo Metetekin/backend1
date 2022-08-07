@@ -1,0 +1,120 @@
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb

@@ -1,0 +1,224 @@
+﻿
+@model BullBeez.WebAdmin.PaymentApiCore.Model.CardDetailModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BULLBEEZ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="BULLBEEZ">
+    <meta name="keywords" content="BULLBEEZ">
+    <meta name="description" content="BULLBEEZ">
+    <link rel="shortcut icon" type="image/x-icon" href="~/plugins/img/fav.png">
+    <link href="~/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/css/toastr.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 center offset-md-3">
+                <div class="row padtop75">
+                    @*<div class="col-md-12">
+                            <img src="~/plugins/img/logo.png">
+                        </div>*@
+                </div>
+                <div class="row padtop75">
+                    @Html.DisplayFor(model => model.ServiceName)
+                    @Html.DisplayFor(model => model.Amount)
+                    <div class="col-md-12">
+                        <label for="exampleInputEmail1">Kart Numarası</label>
+                        <input class="form-control number" type="text" ng-model="ncard" maxlength="19" placeholder="Kart numarası" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                    </div>
+                    <div class="col-md-12 padtop10">
+                        <label for="exampleInputPassword1">Kart Üzereindeki İsim</label>
+                        <input class="form-control inputname" type="text" placeholder="Kart sahibinin adı soyadı" />
+                    </div>
+                    <div class="col-md-12 padtop10">
+                        <label for="exampleInputPassword1">Son Kullanma Tarihi</label>
+                        <input class="form-control expire" type="text" placeholder="AA / YYYY" />
+                    </div>
+                    <div class="col-md-12 padtop10">
+                        <label for="exampleInputPassword1">Güvenlik Kodu</label>
+                        <input class="form-control ccv" type="text" placeholder="CVC" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                    </div>
+                    <div class="col-md-12 padtop100 marginbottom50">
+                        <button id="ButonSubmit" class="cat-button">Ödeme Yap</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/plugins/js/jquery.js"></script>
+    <script src="~/plugins/js/toastr.js"></script>
+    <script src="~/plugins/js/jquery.blockUI.js"></script>
+    <script>
+        $(document).ready(function () {
+            BtnSaveClick();
+        });
+
+        var month = 0;
+        var html = document.getElementsByTagName('html')[0];
+        var number = "";
+
+        var selected_card = -1;
+        var amount = '@Html.DisplayFor(model => model.Amount)';
+
+        $(document).click(function (e) {
+            if (!$(e.target).is(".ccv") || !$(e.target).closest(".ccv").length) {
+                $(".card").css("transform", "rotatey(0deg)");
+                $(".seccode").css("color", "var(--text-color)");
+            }
+            if (!$(e.target).is(".expire") || !$(e.target).closest(".expire").length) {
+                $(".date_value").css("color", "var(--text-color)");
+            }
+            if (!$(e.target).is(".number") || !$(e.target).closest(".number").length) {
+                $(".card_number").css("color", "var(--text-color)");
+            }
+            if (!$(e.target).is(".inputname") || !$(e.target).closest(".inputname").length) {
+                $(".fullname").css("color", "var(--text-color)");
+            }
+        });
+
+
+        //Card number input
+        $(".number").keyup(function (event) {
+            $(".card_number").text($(this).val());
+            number = $(this).val();
+
+            if (parseInt(number.substring(0, 2)) > 50 && parseInt(number.substring(0, 2)) < 56) {
+                selected_card = 0;
+            } else if (parseInt(number.substring(0, 1)) == 4) {
+                selected_card = 1;
+            } else if (parseInt(number.substring(0, 2)) == 36 || parseInt(number.substring(0, 2)) == 38 || parseInt(number.substring(0, 2)) == 39) {
+                selected_card = 2;
+            } else if (parseInt(number.substring(0, 2)) == 34 || parseInt(number.substring(0, 2)) == 37) {
+                selected_card = 3;
+            } else if (parseInt(number.substring(0, 2)) == 65) {
+                selected_card = 4;
+            } else if (parseInt(number.substring(0, 4)) == 5019) {
+                selected_card = 5;
+            } else {
+                selected_card = -1;
+            }
+
+
+        }).focus(function () {
+            $(".card_number").css("color", "white");
+        }).on("keydown input", function () {
+
+            $(".card_number").text($(this).val());
+
+            if (event.key >= 0 && event.key <= 9) {
+                if ($(this).val().length === 4 || $(this).val().length === 9 || $(this).val().length === 14) {
+                    $(this).val($(this).val() + " ");
+                }
+            }
+        })
+
+        //Name Input
+        $(".inputname").keyup(function () {
+            $(".fullname").text($(this).val());
+            if ($(".inputname").val().length === 0) {
+                $(".fullname").text("FULL NAME");
+            }
+            return event.charCode;
+        }).focus(function () {
+            $(".fullname").css("color", "white");
+        });
+
+        //Security code Input
+        $(".ccv").focus(function () {
+            $(".card").css("transform", "rotatey(180deg)");
+            $(".seccode").css("color", "white");
+        }).keyup(function () {
+            $(".seccode").text($(this).val());
+            if ($(this).val().length === 0) {
+                $(".seccode").html("&#x25CF;&#x25CF;&#x25CF;");
+            }
+        }).focusout(function () {
+            $(".card").css("transform", "rotatey(0deg)");
+            $(".seccode").css("color", "var(--text-color)");
+        });
+
+
+        //Date expire input
+        $(".expire").keypress(function (event) {
+            if (event.charCode >= 48 && event.charCode <= 57) {
+                if ($(this).val().length === 1) {
+                    $(this).val($(this).val() + event.key + " / ");
+                } else if ($(this).val().length === 0) {
+                    if (event.key == 1 || event.key == 0) {
+                        month = event.key;
+                        return event.charCode;
+                    } else {
+                        $(this).val(0 + event.key + " / ");
+                    }
+                } else if ($(this).val().length > 2 && $(this).val().length < 9) {
+                    return event.charCode;
+                }
+            }
+            return false;
+        }).keyup(function (event) {
+            $(".date_value").html($(this).val());
+            if (event.keyCode == 8 && $(".expire").val().length == 4) {
+                $(this).val(month);
+            }
+
+            if ($(this).val().length === 0) {
+                $(".date_value").text("MM / YYYY");
+            }
+        }).keydown(function () {
+            $(".date_value").html($(this).val());
+        }).focus(function () {
+            $(".date_value").css("color", "white");
+        });
+
+        function BtnSaveClick() {
+            $('#ButonSubmit').click(function () {
+                DocumentLoad();
+            });
+        };
+
+        function DocumentLoad() {
+
+            try {
+                $.ajax({
+                    url: '/AnaSayfa/UploadVideo',
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+                    beforeSend: function () {
+                        $.blockUI({ message: 'Lütfen Bekleyiniz. Dosya büyüklüğüne göre bekleme süreniz değişecektir.' });
+                    },
+                    success: function (result) {
+                        $.unblockUI();
+                        toastr.success('Kaydınız başarıyla alınmıştır.', 'Bilgi');
+                        $('#AdSoyad').val('');
+                        $('#Telefon').val('');
+                        $('#Email').val('');
+                        $('#Instagram').val('');
+                        document.getElementById('Dosya').value = null;
+                        document.getElementById('labell').textContent = "Videonuzu seçmek için tıklayınız";
+                        return 1;
+                    },
+                    error: function (err) {
+                        return 0;
+                    },
+                    complete: function (data) {
+
+                    }
+                });
+            }
+            catch (err) {
+            }
+        }
+
+
+    </script>
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+</script>

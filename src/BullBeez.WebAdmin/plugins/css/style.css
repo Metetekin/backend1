@@ -1,0 +1,160 @@
+.center
+{
+  text-align: center;
+}
+.nomargin
+{
+  margin: 0;
+}
+.padtop10
+{
+	padding-top: 10px;
+}
+.padtop50
+{
+	padding-top: 50px;
+}
+.padtop75
+{
+	padding-top: 75px;
+}
+.padtop100
+{
+	padding-top: 100px;
+}
+
+.padbottom50
+{
+	padding-top: 50px;
+}
+.marginbottom50
+{
+	margin-bottom: 50px;
+}
+
+/*******************************************************************************/
+/***********************************İNPUT***************************************/
+/*******************************************************************************/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0px 1000px #9d2f86 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-input-cat
+{
+	border-radius:10px;
+	background-color: #9d2f86;
+	width: 100%;
+	height:45px;
+	color: #FFFFFF;
+	font-size:16px;
+	border:0px;
+	padding: 0px 30px;
+}
+
+
+/*******************************************************************************/
+/***********************************PLACEHOLDER*********************************/
+/*******************************************************************************/
+::placeholder
+{
+	color:#FFFFFF;
+}
+
+:-ms-input-placeholder
+{
+	color:#FFFFFF;
+}
+input::placeholder
+{
+	color:#FFFFFF;
+}
+
+.form-input-cat::-webkit-input-placeholder
+{
+	color: white;
+}
+
+.form-input-cat:-moz-placeholder
+{
+	color: white;
+}
+
+.form-input-cat::-moz-p
+{
+	color: white;
+}
+
+.form-input-cat:-ms-input-placeholder
+{
+	color: white;
+}
+
+
+
+
+/*******************************************************************************/
+/***********************************FILE INPUT**********************************/
+/*******************************************************************************/
+.cat-file-input
+{
+	width: 100%;
+	height: 45px;
+	display: block;
+	cursor: pointer;
+	border-radius: 10px;
+	white-space: nowrap;
+	font-size: 16px;
+	position: relative;
+	color: #FFF;
+	background-color: #9d2f86;
+	border-radius: 10px;
+}
+
+
+
+.cat-file-input:hover,
+.cat-file-input:focus
+{
+	background-color: #9d2f86;
+}
+
+.cat-file-input input
+{
+	opacity: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+.cat-file-input::before
+{
+	/*content: "Videonuzu seçmek için tıklayınız";*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+.cat-button {
+	border-radius: 10px;
+	background-color: #1ec070;
+	width: 100%;
+	height: 45px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: 0px;
+}
+
+

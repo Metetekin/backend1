@@ -1,0 +1,18 @@
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.deps.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.deps.json
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.pdb

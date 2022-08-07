@@ -1,0 +1,62 @@
+﻿
+@using System.Xml.Linq
+@using Newtonsoft.Json
+@model BullBeez.WebAdmin.PaymentApiCore.Response.ThreeDPaymentInitResponse
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BULLBEEZ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="BULLBEEZ">
+    <meta name="keywords" content="BULLBEEZ">
+    <meta name="description" content="BULLBEEZ">
+    <link rel="shortcut icon" type="image/x-icon" href="~/plugins/img/fav.png">
+    <link href="~/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/css/toastr.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/css/style.css">
+    <link href="~/plugins/css/cc.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="card-body">
+        <div class="row">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <br><br> <h2 style="color:#0fad00">Başarısız</h2>
+                        <img src="~/plugins/img/fail-failed-lock-icon-with-png-and-vector-format-for-free-745392.png" style="width:75%;" />
+                        <p style="font-size:20px;color:#5C5C5C;">
+                            Ödeme işleminizde bir hata oluşmuştur.
+                        </p>
+                        <br><br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/plugins/js/jquery.js"></script>
+    <script src="~/plugins/js/toastr.js"></script>
+    <script src="~/plugins/js/jquery.blockUI.js"></script>
+
+</body>
+</html>
+
+
+
+
+@*<pre>
+            @{
+                 if (Model!=null)
+            {
+                 string formatted = XDocument.Parse(XmlBuilder.GetXMLFromObject(Model)).ToString();
+                   @Html.Raw(Html.Encode(formatted));
+            }
+
+                }
+    </pre>*@

@@ -1,0 +1,304 @@
+﻿
+@model BullBeez.WebAdmin.PaymentApiCore.Model.CardDetailModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BULLBEEZ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="BULLBEEZ">
+    <meta name="keywords" content="BULLBEEZ">
+    <meta name="description" content="BULLBEEZ">
+    <link rel="shortcut icon" type="image/x-icon" href="~/plugins/img/fav.png">
+    <link href="~/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/css/toastr.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/plugins/css/style.css">
+    <link href="~/plugins/css/cc.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="card-body">
+        <div class="row">
+            <form id="frmKart" action="/Home/OdemeYap" method="post" class="form-horizontal">
+                <div class="col-md-7">
+                    <div class="left border">
+                        <input type="hidden" id="userId" name="userId" value="@Html.DisplayFor(model => model.UserId)">
+                        <input type="hidden" id="serviceId" name="serviceId" value="@Html.DisplayFor(model => model.ServiceId)">
+                        <input type="hidden" id="createPaymentId" name="createPaymentId" value="@Html.DisplayFor(model => model.CreatePaymentId)" />
+                        <input type="hidden" id="odemeOnaySecimi" name="odemeOnaySecimi" value="false">
+                        <input type="hidden" id="hizmetTipi" name="hizmetTipi" value="1">
+                        <div class="row">
+                            <span class="header">Ödeme</span>
+                            <div class="icons"> <img src="https://img.icons8.com/color/48/000000/visa.png" /> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" /> <img src="https://img.icons8.com/color/48/000000/maestro.png" /> </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <span>Kart Üzerindeki İsim:</span>
+                                <input class="form-control inputname" name="nameSurname" id="nameSurname" type="text" placeholder="Kart üzerindeki ad soyad">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <span>Kart Numarası:</span>
+                                <input class="form-control number" type="text" name="cardNumber" id="cardNumber" ng-model="ncard" maxlength="19" placeholder="Kart numarası" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <span>Son Kullanma Tarihi:</span>
+                                <input class="form-control expire" type="text" name="monthAndYear" id="monthAndYear" placeholder="AA / YY">
+                            </div>
+                            <div class="col-4">
+                                <span>CVC:</span>
+                                <input class="form-control ccv" type="text" name="cvc" id="cvc" placeholder="CVC" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="right border">
+                        <div class="header">Sipariş Özeti</div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-3">
+                                <div style="width:50px;height:50px;float: left;position: relative; background: linear-gradient(0deg, rgba(67,177,62,1) 0%, rgba(141,245,131,1) 100%);border-radius: 50%;">
+                                    <div style="color:#FFFFFF;width: 50px;height: 50px;position: absolute;top:25%;left:22%;">
+                                        <i class="fa fa-keyboard-o fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <span style="font-size: 14px; font-weight: 800; color: #666; font-family: Arial, Helvetica, sans-serif"> @Html.DisplayFor(model => model.ServiceName)</span>
+                            </div>
+                            <div class="col-3">
+                                <span style="font-size:12px;font-weight:800;color:#1ec070; font-family:Arial, Helvetica, sans-serif;"> @Html.DisplayFor(model => model.Amount) TL</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row lower">
+                            <div class="col text-left" style="font-weight: bold; color: #666 ">Ara Toplam</div>
+                            <div class="col text-right" style="font-weight: 800; font-size: 14px; color: #666 "> @Html.DisplayFor(model => model.AmountFirst) TL</div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left" style="font-weight: bold; color: #666 ">KDV</div>
+                            <div class="col text-right" style="font-weight: 800; font-size: 14px; color: #666 "> @Html.DisplayFor(model => model.KDV) TL</div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left" style="font-weight: bold; color: #666 ">Toplam Ödenecek Tutar</div>
+                            <div class="col text-right" style="font-weight: 800; font-size: 14px; color: #666 "> @Html.DisplayFor(model => model.Amount) TL</div>
+                        </div>
+                        <hr />
+                        <div class="row lower">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                    <b>BİLGİLENDİRME METNİ.</b>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row lower">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                    Bullbeez, size 1 haftada istediğiniz kriterlerdeki hizmeti bulmayı ve görüşme sağlamayı taahhüt eder. Görüşme süreçlerinde bulunmaz ve görüşme süreçlerindeki gelişmelerden sorumlu değildir. Görüşmeye katılmayacak alıcı 24 saat önceden bildirilmelidir. Aksi takdirde görüşme yeniden ayarlanmayacaktır. Bunları okuyup anladıysanız kutucuğa tıklayınız.
+                                </label>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row lower">
+                            <label class="container">
+                                <input type="checkbox" value="" id="odemeOnay" name="odemeOnay">
+                                <span class="checkmark"></span>
+                                <b>Yukarıdaki Metni Okudum. Onayladım.</b>
+                            </label>
+                        </div>
+                        <div class="row lower">
+                        </div> <button class="btn cat-button" type="button" id="BtnOdemeYap">Ödeme Yap</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="~/plugins/js/jquery.js"></script>
+    <script src="~/plugins/js/toastr.js"></script>
+    <script src="~/plugins/js/jquery.blockUI.js"></script>
+    <script>
+        $(document).ready(function () {
+            BtnOdemeYapClick();
+        });
+
+        var month = 0;
+        var html = document.getElementsByTagName('html')[0];
+        var number = "";
+
+        var selected_card = -1;
+
+        $(document).click(function (e) {
+            if (!$(e.target).is(".ccv") || !$(e.target).closest(".ccv").length) {
+                $(".card").css("transform", "rotatey(0deg)");
+                $(".seccode").css("color", "var(--text-color)");
+            }
+            if (!$(e.target).is(".expire") || !$(e.target).closest(".expire").length) {
+                $(".date_value").css("color", "var(--text-color)");
+            }
+            if (!$(e.target).is(".number") || !$(e.target).closest(".number").length) {
+                $(".card_number").css("color", "var(--text-color)");
+            }
+            if (!$(e.target).is(".inputname") || !$(e.target).closest(".inputname").length) {
+                $(".fullname").css("color", "var(--text-color)");
+            }
+        });
+
+
+        //Card number input
+        $(".number").keyup(function (event) {
+            $(".card_number").text($(this).val());
+            number = $(this).val();
+
+            if (parseInt(number.substring(0, 2)) > 50 && parseInt(number.substring(0, 2)) < 56) {
+                selected_card = 0;
+            } else if (parseInt(number.substring(0, 1)) == 4) {
+                selected_card = 1;
+            } else if (parseInt(number.substring(0, 2)) == 36 || parseInt(number.substring(0, 2)) == 38 || parseInt(number.substring(0, 2)) == 39) {
+                selected_card = 2;
+            } else if (parseInt(number.substring(0, 2)) == 34 || parseInt(number.substring(0, 2)) == 37) {
+                selected_card = 3;
+            } else if (parseInt(number.substring(0, 2)) == 65) {
+                selected_card = 4;
+            } else if (parseInt(number.substring(0, 4)) == 5019) {
+                selected_card = 5;
+            } else {
+                selected_card = -1;
+            }
+
+
+        }).focus(function () {
+            $(".card_number").css("color", "white");
+        }).on("keydown input", function () {
+
+            $(".card_number").text($(this).val());
+
+            if (event.key >= 0 && event.key <= 9) {
+                if ($(this).val().length === 4 || $(this).val().length === 9 || $(this).val().length === 14) {
+                    $(this).val($(this).val() + " ");
+                }
+            }
+        })
+
+        //Name Input
+        $(".inputname").keyup(function () {
+            $(".fullname").text($(this).val());
+            if ($(".inputname").val().length === 0) {
+                $(".fullname").text("FULL NAME");
+            }
+            return event.charCode;
+        }).focus(function () {
+            $(".fullname").css("color", "white");
+        });
+
+        //Security code Input
+        $(".ccv").focus(function () {
+            $(".card").css("transform", "rotatey(180deg)");
+            $(".seccode").css("color", "white");
+        }).keyup(function () {
+            $(".seccode").text($(this).val());
+            if ($(this).val().length === 0) {
+                $(".seccode").html("&#x25CF;&#x25CF;&#x25CF;");
+            }
+        }).focusout(function () {
+            $(".card").css("transform", "rotatey(0deg)");
+            $(".seccode").css("color", "var(--text-color)");
+        });
+
+
+        //Date expire input
+        $(".expire").keypress(function (event) {
+            if (event.charCode >= 48 && event.charCode <= 57) {
+                if ($(this).val().length === 1) {
+                    $(this).val($(this).val() + event.key + "/");
+                } else if ($(this).val().length === 0) {
+                    if (event.key == 1 || event.key == 0) {
+                        month = event.key;
+                        return event.charCode;
+                    } else {
+                        $(this).val(0 + event.key + "/");
+                    }
+                } else if ($(this).val().length > 2 && $(this).val().length < 5) {
+                    return event.charCode;
+                }
+            }
+            return false;
+        }).keyup(function (event) {
+            $(".date_value").html($(this).val());
+            if (event.keyCode == 8 && $(".expire").val().length == 4) {
+                $(this).val(month);
+            }
+
+            if ($(this).val().length === 0) {
+                $(".date_value").text("MM/YY");
+            }
+        }).keydown(function () {
+            $(".date_value").html($(this).val());
+        }).focus(function () {
+            $(".date_value").css("color", "white");
+        });
+
+        function BtnOdemeYapClick() {
+            $('#BtnOdemeYap').click(function () {
+                var kartIsmi = $('#nameSurname').val();
+                if (kartIsmi == '') {
+                    toastr.error('Kart ismini boş bırakmayınız!');
+                    return;
+                }
+
+                var kartNo = $('#cardNumber').val();
+                if (kartNo == '' || kartNo.length<16) {
+                    toastr.error('Kart bilgileini doğru giriniz!');
+                    return;
+                }
+
+                var monthAndYear = $('#monthAndYear').val();
+                if (monthAndYear == '' ) {
+                    toastr.error('Kart ay gün boş bırakmayınız!');
+                    return;
+                }
+
+                var cvc = $('#cvc').val();
+                if (cvc == '' ||  cvc.length != 3) {
+                    toastr.error('Cvs hatalıdır!');
+                    return;
+                }
+
+                var x = document.getElementById("odemeOnay").checked;
+                
+                if (x == false) {
+                    toastr.error('Bilgilendirme metnini işaretleyiniz!');
+                }
+                else {
+
+                    document.getElementById("frmKart").submit();
+                }
+
+            });
+        };
+
+        const checkbox = $("#odemeOnay");
+
+        checkbox.change(function (event) {
+            var checkbox = event.target;
+            if (checkbox.checked) {
+                $('#odemeOnaySecimi').val(true);
+            } else {
+                $('#odemeOnaySecimi').val(false);
+            }
+        });
+
+       
+
+    </script>
+</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+</script>
+
+

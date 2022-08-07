@@ -1,0 +1,150 @@
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Aytug\source\repos\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.AssemblyReference.cache
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Documents\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\BullBeez\Son\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Administrator\Desktop\Bullbeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\BullBeez\Bullbeez Son Hali\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.AssemblyReference.cache
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+C:\Users\Aytug\Desktop\Aytuğ\BullBeez\BullBeezApi\BullBeezApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.deps.json
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.json
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.runtimeconfig.dev.json
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.dll
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Data.pdb
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.AssemblyReference.cache
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfoInputs.cache
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.AssemblyInfo.cs
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CoreCompileInputs.cache
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.csproj.CopyComplete
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.dll
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.pdb
+D:\BullBeez\BullBeezApi\BullBeezEFApi\src\BullBeez.Data\obj\Debug\netcoreapp3.1\BullBeez.Data.genruntimeconfig.cache
