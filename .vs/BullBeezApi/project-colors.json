@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f87cb006-472d-4368-9e13-9eb2b84174a1": {
+      "ProjectGuid": "f87cb006-472d-4368-9e13-9eb2b84174a1",
+      "DisplayName": "BullBeez.Api",
+      "ColorIndex": 0
+    },
+    "53ee821f-08bc-4965-8043-95f76e030b62": {
+      "ProjectGuid": "53ee821f-08bc-4965-8043-95f76e030b62",
+      "DisplayName": "BullBeez.Service",
+      "ColorIndex": 1
+    },
+    "9f0dfc37-e9d2-4d73-956e-396be8322443": {
+      "ProjectGuid": "9f0dfc37-e9d2-4d73-956e-396be8322443",
+      "DisplayName": "BullBeez.Core",
+      "ColorIndex": 2
+    },
+    "84393f94-0bd2-47e1-9689-ef04fc9c511e": {
+      "ProjectGuid": "84393f94-0bd2-47e1-9689-ef04fc9c511e",
+      "DisplayName": "BullBeez.WebAdmin",
+      "ColorIndex": 3
+    },
+    "45ae7a83-81da-43ec-ae42-2f722e5fd352": {
+      "ProjectGuid": "45ae7a83-81da-43ec-ae42-2f722e5fd352",
+      "DisplayName": "BullBeez.Data",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}

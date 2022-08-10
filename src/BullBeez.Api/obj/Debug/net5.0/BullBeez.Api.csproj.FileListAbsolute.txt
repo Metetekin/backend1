@@ -906,3 +906,8 @@ C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\obj\Debug\net5.0\BullBeez.
 C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\obj\Debug\net5.0\ref\BullBeez.Api.dll
 C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\obj\Debug\net5.0\BullBeez.Api.pdb
 C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\obj\Debug\net5.0\BullBeez.Api.genruntimeconfig.cache
+C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\bin\Debug\net5.0\Google.Apis.dll
+C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\bin\Debug\net5.0\Google.Apis.Auth.dll
+C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Api\bin\Debug\net5.0\Google.Apis.Core.dll

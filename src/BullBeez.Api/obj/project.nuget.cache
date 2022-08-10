@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "uDqmEz2+oJYe94BbHYdlZ1pWGmK39YEcSRXEFhTa0VknaCQ75/npf7Z0SESIDPNVrshXDUfqzooaMiN2EkIDFg==",
+  "dgSpecHash": "74poSFcVGpD7kjdYjP8NQDJmKcK3mPvsRQ3f+phZG50fW7GU3Z9NmSIeHZU7SvV6/5G3stxlEwF4D89SVqiO6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Baran\\Source\\Repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Baran\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Baran\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Baran\\.nuget\\packages\\cloudinarydotnet\\1.15.2\\cloudinarydotnet.1.15.2.nupkg.sha512",
+    "C:\\Users\\Baran\\.nuget\\packages\\google.apis\\1.57.0\\google.apis.1.57.0.nupkg.sha512",
+    "C:\\Users\\Baran\\.nuget\\packages\\google.apis.auth\\1.57.0\\google.apis.auth.1.57.0.nupkg.sha512",
+    "C:\\Users\\Baran\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
     "C:\\Users\\Baran\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Baran\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.7\\microsoft.aspnetcore.authentication.google.5.0.7.nupkg.sha512",
     "C:\\Users\\Baran\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "C:\\Users\\Baran\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",
     "C:\\Users\\Baran\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

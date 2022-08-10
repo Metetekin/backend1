@@ -3,9 +3,7 @@ using BullBeez.Core.Enums;
 using BullBeez.Core.Repositories;
 using BullBeez.Core.RequestDTO;
 using BullBeez.Data.Context;
-
 using Microsoft.EntityFrameworkCore;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -13,5 +13,6 @@ namespace BullBeez.Core.Repositories
         ValueTask<UserPosts> GetById(int id);
         Task<IEnumerable<UserPosts>> GetAllFilter(Expression<Func<UserPosts, bool>> predicate);
         Task<IEnumerable<UserPosts>> GetPostsAndCompanyAndPersonData(string searchValue);
+        Task<IEnumerable<UserPosts>> GetPostByFollowingCompanyAndPerson(int[] companyAndPersonId);
     }
 }
