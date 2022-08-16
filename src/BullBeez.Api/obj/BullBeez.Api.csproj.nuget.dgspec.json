@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj": {}
+    "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj": {
+    "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
         "projectName": "BullBeez.Api",
-        "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
+        "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
         "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Api\\obj\\",
+        "outputPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\baran.polat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj": {
-                "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj"
+              "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj": {
+                "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj"
               },
-              "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
-                "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj"
+              "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
+                "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj"
               }
             }
           }
@@ -123,12 +123,12 @@
         }
       }
     },
-    "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
+    "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj",
         "projectName": "BullBeez.Core",
-        "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj",
+        "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj",
         "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -188,12 +188,12 @@
         }
       }
     },
-    "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj": {
+    "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj",
         "projectName": "BullBeez.Data",
-        "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj",
+        "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Data\\BullBeez.Data.csproj",
         "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -212,8 +212,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
-                "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj"
+              "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
+                "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj"
               }
             }
           }
@@ -267,12 +267,12 @@
         }
       }
     },
-    "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
+    "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj",
         "projectName": "BullBeez.Service",
-        "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj",
+        "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj",
         "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Service\\obj\\",
         "projectStyle": "PackageReference",
@@ -291,8 +291,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
-                "projectPath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj"
+              "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
+                "projectPath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj"
               }
             }
           }

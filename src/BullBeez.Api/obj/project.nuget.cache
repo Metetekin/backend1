@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nFva1Qz+8tE/X7wfGmdD/q2AblQxg/98b4Kt2KxjKODy3DWyhglQjmduy8khEhvFK2N0OtG0XTVkYyaVFEiagA==",
+  "dgSpecHash": "ckn1jqMXG841yQQ/K5HXW6854yk4PdNPEaDi1jpxtL+gskNMATGCzPxd8RV2LXawEhGv0x0YoIIl9VFcvvmSCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
+  "projectFilePath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baran.polat\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\baran.polat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
