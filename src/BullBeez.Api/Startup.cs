@@ -113,6 +113,7 @@ namespace BullBeez.Api
       });
     }
 
+
     private static void UpdateDatabase(IApplicationBuilder app)
     {
       using (var serviceScope = app.ApplicationServices
