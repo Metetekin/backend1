@@ -131,3 +131,16 @@ C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.
 C:\Users\Baran\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
 C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
 C:\Users\Baran\Source\Repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\baran.polat\source\repos\backend1\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb

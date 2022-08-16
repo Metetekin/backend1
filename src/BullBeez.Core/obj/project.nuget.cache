@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "COCzc20Pr1jq6/ddEAscJb96ZB91XUD7heGHa4lDYLcJxUdS8rAl4poS23zhEsP4TaH1qCNgF1J81AJFdQHaGA==",
+  "dgSpecHash": "OluHZ54QX3Do8b+ZLkuL7RRweM55HO/VJt1uWen3SVVA56gTkgWLkpNvh3awIOTnSt9AthwsTVOY2p7y2viH2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Baran\\Source\\Repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj",
+  "projectFilePath": "C:\\Users\\baran.polat\\source\\repos\\backend1\\src\\BullBeez.Core\\BullBeez.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Baran\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.8\\microsoft.aspnetcore.http.features.5.0.8.nupkg.sha512",
-    "C:\\Users\\Baran\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
-    "C:\\Users\\Baran\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\Baran\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
-    "C:\\Users\\Baran\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "C:\\Users\\baran.polat\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.8\\microsoft.aspnetcore.http.features.5.0.8.nupkg.sha512",
+    "C:\\Users\\baran.polat\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\baran.polat\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\baran.polat\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\baran.polat\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

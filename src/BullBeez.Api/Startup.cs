@@ -50,11 +50,11 @@ namespace BullBeez.Api
       services.AddTransient<ICommonService, CommonService>();
       services.AddTransient<IServiceService, ServiceService>();
       services.AddSingleton<TwitterBatch>();
-      //services.AddHostedService<TwitterBatch>(provider => provider.GetService<TwitterBatch>());
+      services.AddHostedService<TwitterBatch>(provider => provider.GetService<TwitterBatch>());
       string mySqlConnectionStr = Configuration.GetConnectionString("DevConnection");
       //services.AddDbContext<BullBeezDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection2")), ServiceLifetime.Transient);
-      //services.AddDbContext<BullBeezDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
-      services.AddDbContext<BullBeezDBContext>(opt => opt.UseSqlServer("Server=.;Initial Catalog=BulbeezTest;uid =sa;pwd=123;MultipleActiveResultSets=True;"));
+      services.AddDbContext<BullBeezDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+      //services.AddDbContext<BullBeezDBContext>(opt => opt.UseSqlServer("Server=.;Initial Catalog=BulbeezTest;uid =sa;pwd=123;MultipleActiveResultSets=True;"));
 
       services.AddControllersWithViews().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
       services.AddSwaggerGen(c =>
@@ -86,7 +86,7 @@ namespace BullBeez.Api
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env, BullBeezDBContext db)
     {
-      //UpdateDatabase(app);
+      UpdateDatabase(app);
 
       if (env.IsDevelopment())
       {
