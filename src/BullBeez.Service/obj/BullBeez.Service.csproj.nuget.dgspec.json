@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj": {}
+    "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj": {}
   },
   "projects": {
-    "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
+    "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj",
         "projectName": "BullBeez.Core",
-        "projectPath": "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj",
-        "packagesPath": "C:\\Users\\Aytug\\.nuget\\packages\\",
-        "outputPath": "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Core\\obj\\",
+        "projectPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj",
+        "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Aytug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\baran.polat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {},
+          "http://nuget.subservis.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -59,7 +56,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,25 +66,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
+    "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj",
         "projectName": "BullBeez.Service",
-        "projectPath": "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj",
-        "packagesPath": "C:\\Users\\Aytug\\.nuget\\packages\\",
-        "outputPath": "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Service\\obj\\",
+        "projectPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj",
+        "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Aytug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\baran.polat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,14 +88,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {},
+          "http://nuget.subservis.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
-                "projectPath": "D:\\BullBeez\\BullBeezApi\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj"
+              "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
+                "projectPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj"
               }
             }
           }
@@ -139,7 +134,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -148,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
