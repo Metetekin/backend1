@@ -53,7 +53,7 @@ namespace BullBeez.Api
 			services.AddScoped<INotificationHelper, NotificationHelper>();
 			services.AddScoped<ISmsService, SmsService>();
 			//services.AddDbContext<BullBeezDBContext>();
-			 services.AddSingleton<TwitterBatch>();
+			services.AddSingleton<TwitterBatch>();
 			//services.AddHostedService<TwitterBatch>(provider => provider.GetService<TwitterBatch>());
 			string mySqlConnectionStr = Configuration.GetConnectionString("DevConnection");
 			//services.AddDbContext<BullBeezDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection3")), ServiceLifetime.Transient);
