@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ckn1jqMXG841yQQ/K5HXW6854yk4PdNPEaDi1jpxtL+gskNMATGCzPxd8RV2LXawEhGv0x0YoIIl9VFcvvmSCQ==",
+  "dgSpecHash": "80DdOjtHmF4tKkEBe2Tt00VDAc43+HODYaX5EfCr7FfoIgOpZ1yMPSLp0XEl3io6SsKg/Ax9l+mgtbSeoydE9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Api\\BullBeez.Api.csproj",
+  "projectFilePath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Api\\BullBeez.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baran.polat\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\baran.polat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -127,5 +127,18 @@
     "C:\\Users\\baran.polat\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\baran.polat\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://api.nuget.org/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.subservis.com/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
 }

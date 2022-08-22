@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q57g9CBt2+F7rgTr1YYyMPDi9l5JaHlP6EhoWLKhqwXS6rtPd5l3S1gx+lU/dqy1DjzeDMTI7GTQE5mTt+jkYA==",
+  "dgSpecHash": "ugEbBI5p3hA6xRPKKxuAO0oPv+khLU/9Xp2GKjrAF3hEXgqb9BkoWlfMnRXlPet6W4pQGF2l4EBsQ/UXfJwFrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\baran.polat\\Source\\Repos\\backend1\\src\\BullBeez.Service\\BullBeez.Service.csproj",
+  "projectFilePath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baran.polat\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\baran.polat\\.nuget\\packages\\cloudinarydotnet\\1.15.2\\cloudinarydotnet.1.15.2.nupkg.sha512",
@@ -36,5 +36,18 @@
     "C:\\Users\\baran.polat\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\baran.polat\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://api.nuget.org/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.subservis.com/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
 }
