@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Kaydet</button>
+                @*<button type="button" class="btn btn-primary">Kaydet</button>*@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
             </div>
         </div>
@@ -117,7 +117,7 @@
                         "data": "Id",
                         "orderable": false,
                         "render": function (data, type, row, meta) {
-                            var a = '<button onclick="ShowUser(' + row.Id + ')" class="btn btn-success text-white">Update Profile</button>'
+                            var a = '<button onclick="ShowUser(' + row.Id + ')" class="btn btn-success text-white">Show Profile</button>'
 
                             return a;
                         }

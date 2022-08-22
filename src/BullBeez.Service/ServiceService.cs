@@ -9,9 +9,14 @@ using BullBeez.Core.ResponseDTO;
 using BullBeez.Core.Services;
 using BullBeez.Core.UOW;
 
+using RestSharp;
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -56,7 +61,7 @@ namespace BullBeez.Service
                     List<OptionModel> optionList = new List<OptionModel>();
                     foreach (var itemQuestionOptions in itemQuestion.Question.QuestionOptions)
                     {
-                        optionList.Add(new OptionModel { OptionId = itemQuestionOptions.Id, Option = itemQuestionOptions .Option});
+                        optionList.Add(new OptionModel { OptionId = itemQuestionOptions.Id, Option = itemQuestionOptions.Option });
                     }
                     objQuestion.OptionList = optionList;
                     questionList.Add(objQuestion);
@@ -76,7 +81,7 @@ namespace BullBeez.Service
 
         public async Task<ApiResult<List<PackageResponse>>> GetPackageList()
         {
-            var response = await _unitOfWork.Package.GetAll();
+            var response = await _unitOfWork.Package.GetAll().ConfigureAwait(false);
 
             List<PackageResponse> responseList = new List<PackageResponse>();
 
@@ -89,7 +94,13 @@ namespace BullBeez.Service
                 obj.OldAmount = item.Amount * 2;
                 obj.PackageIcon = item.PackageIcon;
                 obj.Description = item.Description;
-                
+                obj.UniqCode = item.UniqCode;
+                obj.UniqCodeAndroid = item.UniqCodeAndroid;
+                obj.Icon = item.PackageIcon;
+                obj.ProfileType = item.ProfileType;
+                obj.Note = item.Note;
+                obj.SubscriptionNote = item.SubscriptionNote;
+                obj.SubscriptionEula = item.SubscriptionEula;
                 responseList.Add(obj);
             }
 
@@ -101,7 +112,35 @@ namespace BullBeez.Service
             };
         }
 
+        public async Task<ApiResult<GetUserPackageDetail>> GetPackageUserById(int userId)
+        {
+            var responseData = await _unitOfWork.PackagePayment.GetUserPayPackageList(userId).ConfigureAwait(false);
 
+            var packageList = await GetPackageList().ConfigureAwait(false);
+            foreach (var item in responseData)
+            {
+                GetUserPackageDetail data = new GetUserPackageDetail();
+                data.PackageId = item.PackageId;
+                data.PackageName = packageList.Data.Where(x => x.Id == item.PackageId).FirstOrDefault().PackageName;
+
+                data.UniqCode = packageList.Data.Where(x => x.Id == item.PackageId).FirstOrDefault().UniqCode;
+                data.UniqCodeAndroid = packageList.Data.Where(x => x.Id == item.PackageId).FirstOrDefault().UniqCodeAndroid;
+                data.Color = packageList.Data.Where(x => x.Id == item.PackageId).FirstOrDefault().Color;
+                return new ApiResult<GetUserPackageDetail>
+                {
+                    StatusCode = ResponseCode.Basarili,
+                    Message = "",
+                    Data = data
+                };
+            }
+            return new ApiResult<GetUserPackageDetail>
+            {
+                StatusCode = ResponseCode.Basarili,
+                Message = "",
+                Data = null
+            };
+
+        }
 
         public async Task<ApiResult<ServiceListResponse>> GetServiceById(int id)
         {
@@ -149,7 +188,7 @@ namespace BullBeez.Service
             var companyAndPerson = await _unitOfWork.CompanyAndPersons.GetById(request.UserId.Value);
 
             request.ServiceAnswers = request.ServiceAnswersString.DeserializeObject<List<ServiceAnswerModel>>();
-            var guid = Guid.NewGuid(); 
+            var guid = Guid.NewGuid();
             foreach (var item in request.ServiceAnswers)
             {
                 var service = await _unitOfWork.Service.GetById(request.ServiceId);
@@ -167,7 +206,7 @@ namespace BullBeez.Service
             }
 
             MailHelper mailHelper = new MailHelper();
-            mailHelper.SendMailGlobal(new MailRequest { EmailAddress = "asfasfas", Subject = "Servis Seçimi",Body="Bir kişi ödeme sayfasına kadar geldi ve kayıt atıldı. Kişinin id = " + companyAndPerson.Id });
+            mailHelper.SendMailGlobal(new MailRequest { EmailAddress = "asfasfas", Subject = "Servis Seçimi", Body = "Bir kişi ödeme sayfasına kadar geldi ve kayıt atıldı. Kişinin id = " + companyAndPerson.Id });
 
             await _unitOfWork.CommitAsync();
             return new ApiResult<CreatePayment>
@@ -184,25 +223,41 @@ namespace BullBeez.Service
 
         public async Task<ApiResult<CreatePayment>> CreatePackagePayment(CreatePackagePaymentRequest request)
         {
+
             var companyAndPerson = await _unitOfWork.CompanyAndPersons.GetById(request.UserId.Value);
 
-            
+            var response = await _unitOfWork.Package.GetAll().ConfigureAwait(false);
+
+            var packageId = 0;
+            decimal amount = 0;
+            if (string.IsNullOrEmpty(request.orderId))//eğer boş ise iso
+            {
+                packageId = response.Where(x => x.UniqCode == request.productId).FirstOrDefault().Id;
+                amount = response.Where(x => x.UniqCode == request.productId).FirstOrDefault().Amount;
+                var payResponse = await ISOApiControl(request.transactionReceipt);
+            }
+            else
+            {
+                packageId = response.Where(x => x.UniqCodeAndroid == request.productId).FirstOrDefault().Id;
+                amount = response.Where(x => x.UniqCodeAndroid == request.productId).FirstOrDefault().Amount;
+            }
+
             var guid = Guid.NewGuid();
 
             PackagePayments packagePayments = new PackagePayments();
             packagePayments.CompanyAndPerson = companyAndPerson;
-            packagePayments.IsPayment = request.IsPayment;
-            packagePayments.PackageId = request.PackageId;
-            packagePayments.Amount = request.PaymentAmount;
+            packagePayments.IsPayment = 1;
+            packagePayments.PackageId = packageId;
+            packagePayments.Amount = amount;
             packagePayments.Guid = guid;
             packagePayments.ContractConfirmation = 1;
-
+            packagePayments.TextData = request.SerializeObject();
 
             await _unitOfWork.PackagePayment.AddAsync(packagePayments);
-            
-            MailHelper mailHelper = new MailHelper();
-            mailHelper.SendMailGlobal(new MailRequest { EmailAddress = "asfasfas", Subject = "Paket Seçimi", Body = "Bir kişi ödeme sayfasına kadar geldi ve kayıt atıldı. Kişinin id = " + companyAndPerson.Id });
 
+            //MailHelper mailHelper = new MailHelper();
+            //mailHelper.SendMailGlobal(new MailRequest { EmailAddress = "asfasfas", Subject = "Paket Seçimi", Body = "Bir kişi ödeme sayfasına kadar geldi ve kayıt atıldı. Kişinin id = " + companyAndPerson.Id });
+            
             await _unitOfWork.CommitAsync();
             return new ApiResult<CreatePayment>
             {
@@ -213,6 +268,25 @@ namespace BullBeez.Service
                     CreatePaymentId = guid
                 }
             };
+
         }
+
+        private static readonly HttpClient client = new HttpClient();
+        public async Task<string> ISOApiControl(string receiptData)
+        {
+            var pass = "1922947bbfd347cfa3a6d40eed14666c";
+            var client = new RestClient("https://sandbox.itunes.apple.com/verifyReceipt");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("Content-Type", "application/json");
+            var body = "{\"password\" : \"" + pass + "\",\"receipt-data\" : \"" + receiptData + "\"}";
+
+            request.AddParameter("application/json", body, ParameterType.RequestBody);
+            IRestResponse response = client.Execute(request);
+            
+
+            return response.Content;
+        }
+
     }
 }

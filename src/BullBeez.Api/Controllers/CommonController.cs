@@ -1,4 +1,5 @@
-﻿using BullBeez.Core.Helper;
+﻿using BullBeez.Core.DTO.MailDTO;
+using BullBeez.Core.Helper;
 using BullBeez.Core.RequestDTO;
 using BullBeez.Core.ResponseDTO;
 using BullBeez.Core.Services;

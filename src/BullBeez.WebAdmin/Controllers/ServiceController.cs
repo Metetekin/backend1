@@ -1,4 +1,5 @@
-﻿using BullBeez.WebAdmin.Models;
+﻿using BullBeez.WebAdmin.Classed;
+using BullBeez.WebAdmin.Models;
 using BullBeez.WebAdmin.RequestDTO;
 using BullBeez.WebAdmin.ResponseDTO;
 
@@ -16,10 +17,13 @@ using System.Web.Script.Serialization;
 
 namespace BullBeez.WebAdmin.Controllers
 {
+    [CustomAuthorizeAttribute]
     public class ServiceController : Controller
     {
         static readonly HttpClient client = new HttpClient();
-        private static string baseUrl = "https://localhost:44340/api/WebAdminService/";
+        private static string baseUrl = "https://bullbeezapi.co/api/WebAdminService/";
+
+        //private static string baseUrl = "https://localhost:44340/api/WebAdminService/";       
         private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
         // GET: Service
         public ActionResult Index()

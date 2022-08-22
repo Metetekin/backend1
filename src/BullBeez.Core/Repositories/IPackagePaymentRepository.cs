@@ -11,6 +11,7 @@ namespace BullBeez.Core.Repositories
     public interface IPackagePaymentRepository : IRepository<PackagePayments>
     {
         Task<IEnumerable<PackagePayments>> GetPostFilterList(FilterRequest request);
+        Task<IEnumerable<PackagePayments>> GetUserPayPackageList(int userId);
         Task<IEnumerable<PackagePayments>> GetAll();
         ValueTask<PackagePayments> GetById(int id);
         Task<IEnumerable<PackagePayments>> GetAllFilter(Expression<Func<PackagePayments, bool>> predicate);

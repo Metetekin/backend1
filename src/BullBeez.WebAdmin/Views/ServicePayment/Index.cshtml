@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -79,11 +78,8 @@
     <script>
         $(document).ready(function () {
             LoadDataSource();
-
         });
-
         function LoadDataSource() {
-
             $('#setupList').DataTable({
                 "destroy": true,
                 "processing": true,
@@ -93,7 +89,6 @@
                 "searching": true,
                 "language": {
                     "url":  "@string.Format("{0}://{1}{2}", Request.Url.Scheme, Request.Url.Authority, Url.Content("~"))/assets/dist/js/datatableTR.js"
-
                 },
                 "ajax": {
                     "url": "/ServicePayment/GetServicePaymentList",
@@ -114,15 +109,12 @@
                         "orderable": false,
                         "render": function (data, type, row, meta) {
                             var a = '<button onclick="ShowData(\'' + row.Guid + '\')" class="btn btn-success text-white">Göster</button>'
-
                             return a;
                         }
                     }
-
                 ]
             });
         }
-
         function ShowData(id)
         {
             Form.Reset('frmModal');
@@ -138,23 +130,14 @@
                     $.each(response, function (index, item) {
                         $html += '<tr><td>' + item.NameOrTitle + '</td><td>' + item.Question + '</td>' +
                             '<td>' + item.Option + '</td></tr>';
-
                     });
                     $html += '<tr><td>' + response[0].NameOrTitle + '</td><td>Text Cevap</td>' +
                         '<td>' + response[0].TextCevap + '</td></tr>';
                     $('#tblQestions').append($html);
                     $('#mymodal').modal('show');
             });
-
         }
 
-       
-
-        
 
     </script>
 }
-
-
-
-

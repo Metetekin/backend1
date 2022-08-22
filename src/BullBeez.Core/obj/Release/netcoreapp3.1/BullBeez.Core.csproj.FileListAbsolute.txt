@@ -16,3 +16,31 @@ C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Rele
 C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.dll
 C:\Users\Administrator\Desktop\New folder\BullBeezApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.deps.json
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.AssemblyReference.cache
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfoInputs.cache
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfo.cs
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.CoreCompileInputs.cache
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Aytug\source\repos\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.pdb
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.deps.json
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.dll
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.pdb
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.AssemblyReference.cache
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfoInputs.cache
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfo.cs
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.CoreCompileInputs.cache
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.dll
+D:\Bullbeez\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.deps.json
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\bin\Release\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Release\netcoreapp3.1\BullBeez.Core.pdb

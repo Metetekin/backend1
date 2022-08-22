@@ -159,6 +159,9 @@ namespace BullBeez.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<string>("BannerImage")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Biography")
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
@@ -206,6 +209,12 @@ namespace BullBeez.Data.Migrations
 
                     b.Property<string>("InsertedIp")
                         .HasColumnType("longtext");
+
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("MailPermission")
+                        .HasColumnType("int");
 
                     b.Property<string>("NameOrTitle")
                         .HasColumnType("longtext");
@@ -800,6 +809,9 @@ namespace BullBeez.Data.Migrations
                     b.Property<int?>("RowStatu")
                         .HasColumnType("int");
 
+                    b.Property<string>("Title")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("longtext");
 
@@ -962,6 +974,9 @@ namespace BullBeez.Data.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(65,30)");
 
+                    b.Property<int>("Color")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .HasColumnType("longtext");
 
@@ -977,14 +992,32 @@ namespace BullBeez.Data.Migrations
                     b.Property<string>("InsertedIp")
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Note")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("PackageIcon")
                         .HasColumnType("longtext");
 
                     b.Property<string>("PackageName")
                         .HasColumnType("longtext");
 
+                    b.Property<int>("ProfileType")
+                        .HasColumnType("int");
+
                     b.Property<int?>("RowStatu")
                         .HasColumnType("int");
+
+                    b.Property<string>("SubscriptionEula")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("SubscriptionNote")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UniqCode")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UniqCodeAndroid")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("longtext");
@@ -1177,6 +1210,9 @@ namespace BullBeez.Data.Migrations
                     b.Property<string>("UpdatedIp")
                         .HasColumnType("longtext");
 
+                    b.Property<string>("UserIdWhoLike")
+                        .HasColumnType("longtext");
+
                     b.Property<int?>("UserPostsId")
                         .HasColumnType("int");
 
@@ -1187,6 +1223,47 @@ namespace BullBeez.Data.Migrations
                     b.HasIndex("UserPostsId");
 
                     b.ToTable("PostComments");
+                });
+
+            modelBuilder.Entity("BullBeez.Core.Entities.PostReport", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("InsertedBy")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("InsertedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("InsertedIp")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("PostId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReasonId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReasonText")
+                        .HasColumnType("longtext");
+
+                    b.Property<int?>("RowStatu")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UpdatedIp")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PostReport");
                 });
 
             modelBuilder.Entity("BullBeez.Core.Entities.Posts", b =>
@@ -1750,6 +1827,12 @@ namespace BullBeez.Data.Migrations
                     b.Property<string>("InsertedIp")
                         .HasColumnType("longtext");
 
+                    b.Property<bool>("IsSponsoredPost")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IsUpgradedToBoard")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<int>("LikeCount")
                         .HasColumnType("int");
 
@@ -1765,6 +1848,9 @@ namespace BullBeez.Data.Migrations
                     b.Property<int?>("RowStatu")
                         .HasColumnType("int");
 
+                    b.Property<string>("SponsoredTitle")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("longtext");
 
@@ -1772,6 +1858,9 @@ namespace BullBeez.Data.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("UpdatedIp")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserIdWhoLike")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -1975,7 +2064,7 @@ namespace BullBeez.Data.Migrations
                         .HasForeignKey("CompanyAndPersonId");
 
                     b.HasOne("BullBeez.Core.Entities.UserPosts", "UserPosts")
-                        .WithMany("Comments")
+                        .WithMany()
                         .HasForeignKey("UserPostsId");
 
                     b.Navigation("CompanyAndPerson");
@@ -2119,11 +2208,6 @@ namespace BullBeez.Data.Migrations
             modelBuilder.Entity("BullBeez.Core.Entities.Skill", b =>
                 {
                     b.Navigation("CompanyAndPersonSkills");
-                });
-
-            modelBuilder.Entity("BullBeez.Core.Entities.UserPosts", b =>
-                {
-                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

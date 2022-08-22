@@ -1,4 +1,5 @@
-﻿using BullBeez.WebAdmin.Models;
+﻿using BullBeez.WebAdmin.Classed;
+using BullBeez.WebAdmin.Models;
 using BullBeez.WebAdmin.RequestDTO;
 using BullBeez.WebAdmin.ResponseDTO;
 
@@ -18,10 +19,13 @@ using System.Web.Script.Serialization;
 
 namespace BullBeez.WebAdmin.Controllers
 {
+    [CustomAuthorizeAttribute]
     public class UsersController : Controller
     {
         static readonly HttpClient client = new HttpClient();
-        private static string baseUrl = "https://localhost:44340/api/WebAdminService/";
+        private static string baseUrl = "https://bullbeezapi.co/api/WebAdminService/";
+
+        //private static string baseUrl = "https://localhost:44340/api/WebAdminService/";       
         private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
         // GET: Users
         public async Task<ActionResult> Index()
@@ -68,6 +72,24 @@ namespace BullBeez.WebAdmin.Controllers
             datas.data = response;
             datas.recordsFiltered = response.FirstOrDefault().CountData;
             return Json(datas, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<ActionResult> GetUsersList()
+        {
+            var json = _Serializer.Serialize(new { take = 100000, skip = 0, search = "" });
+
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var url = baseUrl + "GetUsers";
+            var client = new HttpClient();
+
+            var response2 = await client.PostAsync(url, data);
+
+            string result = response2.Content.ReadAsStringAsync().Result;
+            var response = JsonConvert.DeserializeObject<List<UserListResponse>>(result);
+
+            return Json(response.OrderBy(x=> x.NameOrTitle).ToList(), JsonRequestBehavior.AllowGet);
         }
 
         public async Task<ActionResult> GetUserById(GetUserByIdRequest request)

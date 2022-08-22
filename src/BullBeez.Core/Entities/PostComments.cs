@@ -14,5 +14,6 @@ namespace BullBeez.Core.Entities
         public virtual UserPosts UserPosts { get; set; }
         public string Text { get; set; }
         public int LikeCount { get; set; }
+        public string UserIdWhoLike { get; set; }
     }
 }

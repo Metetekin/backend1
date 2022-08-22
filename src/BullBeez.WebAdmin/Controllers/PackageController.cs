@@ -1,4 +1,5 @@
-﻿using BullBeez.WebAdmin.Models;
+﻿using BullBeez.WebAdmin.Classed;
+using BullBeez.WebAdmin.Models;
 using BullBeez.WebAdmin.ResponseDTO;
 
 using Newtonsoft.Json;
@@ -15,11 +16,14 @@ using System.Web.Script.Serialization;
 
 namespace BullBeez.WebAdmin.Controllers
 {
+    [CustomAuthorizeAttribute]
     public class PackageController : Controller
     {
         // GET: Package
         static readonly HttpClient client = new HttpClient();
-        private static string baseUrl = "https://localhost:44340/api/WebAdminService/";
+        private static string baseUrl = "https://bullbeezapi.co/api/WebAdminService/";
+
+        //private static string baseUrl = "https://localhost:44340/api/WebAdminService/";       
         private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
         // GET: Posts
         public ActionResult Index()
@@ -50,6 +54,44 @@ namespace BullBeez.WebAdmin.Controllers
             datas.data = response;
             datas.recordsFiltered = count;
             return Json(datas, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<ActionResult> GetPackageListSelect()
+        {
+            var json = _Serializer.Serialize(new { take = 100, skip = 0, search ="" });
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var url = baseUrl + "GetPackageList";
+            var client = new HttpClient();
+
+            var response2 = await client.GetAsync(url);
+
+            string result = response2.Content.ReadAsStringAsync().Result;
+            var response = JsonConvert.DeserializeObject<List<PackageDatatableModel>>(result);
+
+           
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<ActionResult> GetPackageById(int id)
+        {
+            var json = _Serializer.Serialize(new { take = 10, skip = 0, search = "" });
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var url = baseUrl + "GetPackageList";
+            var client = new HttpClient();
+
+            var response2 = await client.GetAsync(url);
+
+            string result = response2.Content.ReadAsStringAsync().Result;
+            var responseList = JsonConvert.DeserializeObject<List<PackageDatatableModel>>(result);
+
+            var response = responseList.Where(x => x.Id == id).FirstOrDefault();
+
+
+            return Json(response, JsonRequestBehavior.AllowGet);
         }
     }
 }

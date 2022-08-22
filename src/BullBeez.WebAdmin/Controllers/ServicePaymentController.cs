@@ -1,4 +1,5 @@
-﻿using BullBeez.WebAdmin.Models;
+﻿using BullBeez.WebAdmin.Classed;
+using BullBeez.WebAdmin.Models;
 using BullBeez.WebAdmin.PaymentApiCore.Model;
 using BullBeez.WebAdmin.ResponseDTO;
 
@@ -11,6 +12,7 @@ using System.Web.Mvc;
 
 namespace BullBeez.WebAdmin.Controllers
 {
+    [CustomAuthorizeAttribute]
     public class ServicePaymentController : Controller
     {
         // GET: ServicePayment
@@ -50,7 +52,7 @@ namespace BullBeez.WebAdmin.Controllers
             var DB = new db();
             var response = DB.GetServicePaymentById(Id);
 
-           
+
             return Json(response, JsonRequestBehavior.AllowGet);
         }
     }

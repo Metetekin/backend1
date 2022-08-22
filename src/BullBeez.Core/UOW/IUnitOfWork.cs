@@ -30,6 +30,7 @@ namespace BullBeez.Core.UOW
         IBullBeezConfigRepository BullBeezConfig { get; }
         IPostsRepository Posts { get; }
         IUserPostsRepository UserPosts { get; }
+        IPostReportRepository PostReport { get; }
         IPostCommentsRepository PostComments { get; }
         IFeedbackRepository Feedback { get; }
         ICompanyAndPersonInterestRepository CompanyAndPersonInterest { get; }
@@ -44,7 +45,6 @@ namespace BullBeez.Core.UOW
         IPackagePaymentRepository PackagePayment { get; }
         IPackageRepository Package { get; }
         IRepository<TEntity> GetRepository<TEntity>() where TEntity : class;
-
         Task<int> CommitAsync();
     }
 }

@@ -13,5 +13,7 @@ namespace BullBeez.WebAdmin.ResponseDTO
         public decimal OldAmount { get; set; }
         public string PackageIcon { get; set; }
         public string Description { get; set; }
+        public string UniqCode { get; set; }
+        public string UniqCodeAndroid { get; set; }
     }
 }

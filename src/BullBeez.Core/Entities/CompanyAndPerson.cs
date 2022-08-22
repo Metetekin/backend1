@@ -35,6 +35,7 @@ namespace BullBeez.Core.Entities
         public DateTime? BirthDay { get; set; }
         public string Gender { get; set; }
         public int WorkerCount { get; set; }
+        public bool IsAdmin { get; set; }
         public virtual ICollection<Address> Address { get; set; }
 
         public virtual ICollection<CompanyAndPersonProject> CompanyAndPersonProject { get; set; }//kullanıcıya ait proje listesi
@@ -50,7 +51,8 @@ namespace BullBeez.Core.Entities
         public virtual ICollection<Follows> Follows { get; set; }
         public virtual ICollection<FileData> Files { get; set; }
         public virtual ICollection<CompanyAndPersonInterest> CompanyAndPersonInterests { get; set; }
-
+        public int MailPermission { get; set; }
+        public string BannerImage { get; set; }
 
     }
 }
