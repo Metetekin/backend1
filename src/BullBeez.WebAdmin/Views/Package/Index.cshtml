@@ -20,7 +20,37 @@
                         <div class="form-group">
                             <label class="col-md-12">Tip Adı</label>
                             <div class="col-md-12">
-                                <input type="text" name="Name" id="Name" class="form-control form-control-line">
+                                <input type="text" name="PackageName" id="PackageName" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Tutar</label>
+                            <div class="col-md-12">
+                                <input type="text" name="Amount" id="Amount" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Paket İkonu</label>
+                            <div class="col-md-12">
+                                <input type="text" name="PackageIcon" id="PackageIcon" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Açıklama</label>
+                            <div class="col-md-12">
+                                <input type="text" name="Description" id="Description" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">ISO Code</label>
+                            <div class="col-md-12">
+                                <input type="text" name="UniqCode" id="UniqCode" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Android Code</label>
+                            <div class="col-md-12">
+                                <input type="text" name="UniqCodeAndroid" id="UniqCodeAndroid" class="form-control form-control-line">
                             </div>
                         </div>
                     </form>
@@ -132,12 +162,13 @@
         {
             Form.Reset('frmModal');
             $.ajax({
-                url: "/Interest/GetInterestById",
+                url: "/Package/GetPackageById",
                 type: "Post",
                     data: {
-                        Id: id,
+                        id: id,
                     }
-                }).done(function (response) {
+            }).done(function (response) {
+                
                     Form.SetData('frmModal', response);
                     $('#mymodal').modal('show');
             });

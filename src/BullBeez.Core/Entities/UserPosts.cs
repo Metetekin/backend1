@@ -17,6 +17,9 @@ namespace BullBeez.Core.Entities
         public DateTime? CreatedDate { get; set; }
         public int LikeCount { get; set; }
         public int CommentCount { get; set; }
-        public ICollection<PostComments> Comments { get; set; }
+        public string UserIdWhoLike { get; set; }
+        public bool IsSponsoredPost { get; set; }
+        public bool IsUpgradedToBoard { get; set; }
+        public string SponsoredTitle { get; set; }
     }
 }

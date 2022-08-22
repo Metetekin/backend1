@@ -1,4 +1,5 @@
-﻿using BullBeez.WebAdmin.PaymentApiCore;
+﻿using BullBeez.WebAdmin.Classed;
+using BullBeez.WebAdmin.PaymentApiCore;
 using BullBeez.WebAdmin.PaymentApiCore.Base;
 using BullBeez.WebAdmin.PaymentApiCore.Model;
 using BullBeez.WebAdmin.PaymentApiCore.Request;
@@ -20,7 +21,7 @@ namespace BullBeez.WebAdmin.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Login");
         }
 
         [HttpGet]

@@ -1,4 +1,5 @@
-﻿using BullBeez.WebAdmin.Models;
+﻿using BullBeez.WebAdmin.Classed;
+using BullBeez.WebAdmin.Models;
 using BullBeez.WebAdmin.RequestDTO;
 using BullBeez.WebAdmin.ResponseDTO;
 
@@ -17,10 +18,13 @@ using System.Web.Script.Serialization;
 
 namespace BullBeez.WebAdmin.Controllers
 {
+    [CustomAuthorizeAttribute]
     public class CompanyTypeController : Controller
     {
         static readonly HttpClient client = new HttpClient();
-        private static string baseUrl = "https://localhost:44340/api/WebAdminService/";
+        private static string baseUrl = "https://bullbeezapi.co/api/WebAdminService/";
+
+        //private static string baseUrl = "https://localhost:44340/api/WebAdminService/";       
         private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
         // GET: CompanyType
         public ActionResult Index()
@@ -55,6 +59,24 @@ namespace BullBeez.WebAdmin.Controllers
             datas.data = response;
             datas.recordsFiltered = count;
             return Json(datas, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<ActionResult> GetCompanyTypeListSelect()
+        {
+            var json = _Serializer.Serialize(new { take = 0, skip = 1000, search = "", CommonType = 4 });
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var url = baseUrl + "GetCommonData";
+            var client = new HttpClient();
+
+            var response2 = await client.PostAsync(url, data);
+
+            string result = response2.Content.ReadAsStringAsync().Result;
+            var response = JsonConvert.DeserializeObject<List<CommonListResponse>>(result);
+
+           
+            return Json(response, JsonRequestBehavior.AllowGet);
         }
 
         public async Task<ActionResult> GetCompanyTypeById(GetCommonDataByIdRequest request)

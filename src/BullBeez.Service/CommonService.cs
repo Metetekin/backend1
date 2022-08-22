@@ -236,7 +236,7 @@ namespace BullBeez.Service
 
             foreach (var item in response.OrderBy(x => x.Name))
             {
-                responseData.Add(new InterestResponse { Id = item.Id, Name = item.Name, IsSelected = 0, HashId = "#" + item.Id.ToString() + "#" });
+                responseData.Add(new InterestResponse { Id = item.Id, Title = item.Title, Name = item.Name, IsSelected = 0, HashId = "#" + item.Id.ToString() + "#" });
             }
             return new ApiResult<List<InterestResponse>>
             {

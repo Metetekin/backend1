@@ -67,6 +67,9 @@
     <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySqlConnector.2.0.0\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
     <Reference Include="RestSharp, Version=106.12.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\..\packages\RestSharp.106.12.0\lib\net452\RestSharp.dll</HintPath>
     </Reference>
@@ -77,6 +80,9 @@
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Diagnostics.DiagnosticSource.5.0.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -91,6 +97,9 @@
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
@@ -176,14 +185,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classed\CustomAuthorizeAttribute.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CompanyLevelController.cs" />
     <Compile Include="Controllers\CompanyTypeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomePageController.cs" />
     <Compile Include="Controllers\InterestController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\OccupationController.cs" />
     <Compile Include="Controllers\PackageController.cs" />
+    <Compile Include="Controllers\PackagePaymentController.cs" />
+    <Compile Include="Controllers\PopupController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\ServicePaymentController.cs" />
@@ -194,6 +208,9 @@
     </Compile>
     <Compile Include="Models\DataTableResponse.cs" />
     <Compile Include="Models\DataTablesRequest.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\NewUserResponse.cs" />
+    <Compile Include="Models\UserSession.cs" />
     <Compile Include="PaymentApiCore\BankCard.cs" />
     <Compile Include="PaymentApiCore\Base\Base.cs" />
     <Compile Include="PaymentApiCore\Base\Helper.cs" />
@@ -240,14 +257,20 @@
     <Compile Include="PaymentApiCore\Response\ThreeDPaymentInitResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestDTO\CommonDataInsertOrUpdate.cs" />
+    <Compile Include="RequestDTO\DeletePostByIdRequest.cs" />
     <Compile Include="RequestDTO\GetCommonDataByIdRequest.cs" />
     <Compile Include="RequestDTO\GetServiceByIdRequest.cs" />
     <Compile Include="RequestDTO\GetUserByIdRequest.cs" />
+    <Compile Include="RequestDTO\NewPostRequest.cs" />
+    <Compile Include="RequestDTO\PopUpInsertRequest.cs" />
+    <Compile Include="RequestDTO\SendNotificationRequest.cs" />
     <Compile Include="ResponseDTO\BaseInsertOrUpdateResponse.cs" />
     <Compile Include="ResponseDTO\CommonListResponse.cs" />
     <Compile Include="ResponseDTO\GlobalListResponse.cs" />
+    <Compile Include="ResponseDTO\PackagePayment.cs" />
     <Compile Include="ResponseDTO\PackageDatatableModel.cs" />
     <Compile Include="ResponseDTO\PostDatatableModel.cs" />
+    <Compile Include="ResponseDTO\SendNotificationUserListResponse.cs" />
     <Compile Include="ResponseDTO\ServiceListResponse.cs" />
     <Compile Include="ResponseDTO\ServicePayment.cs" />
     <Compile Include="ResponseDTO\UserListResponse.cs" />
@@ -676,6 +699,10 @@
     <Content Include="Views\Posts\Index.cshtml" />
     <Content Include="Views\Package\Index.cshtml" />
     <Content Include="Views\ServicePayment\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\PackagePayment\Index.cshtml" />
+    <Content Include="Views\Notification\Index.cshtml" />
+    <Content Include="Views\Popup\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

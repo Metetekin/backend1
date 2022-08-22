@@ -9,5 +9,8 @@ namespace BullBeez.Core.RequestDTO
         public string PostText { get; set; }
         public string PostMedia { get; set; }
         public string PostTopicsStr { get; set; }
+        public bool IsSponsoredPost { get; set; }
+        public bool IsUpgradedToBoard { get; set; }
+        public string SponsoredTitle { get; set; }
     }
 }

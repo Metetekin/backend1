@@ -3,7 +3,9 @@ using BullBeez.Core.Enums;
 using BullBeez.Core.Repositories;
 using BullBeez.Core.RequestDTO;
 using BullBeez.Data.Context;
+
 using Microsoft.EntityFrameworkCore;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -68,7 +70,13 @@ namespace BullBeez.Data.Repositories
 
         public async ValueTask<CompanyAndPerson> GetById(int id)
         {
-            return await base.SingleOrDefaultAsync(x => x.Id == id && x.RowStatu == EnumRowStatusType.Active);
+            return await BullBeezDBContext.CompanyAndPersons
+                .Include(a => a.Tokens.OrderByDescending(x=> x.Id).Take(1)).FirstOrDefaultAsync(x => x.Id == id && x.RowStatu == EnumRowStatusType.Active);
+        }
+
+        public async ValueTask<CompanyAndPerson> GetByUserName(string UserName)
+        {
+            return await base.SingleOrDefaultAsync(x => x.UserName == UserName && x.RowStatu == EnumRowStatusType.Active);
         }
 
         public async Task<CompanyAndPerson> GetCompanyAndPersonAndInterestById(int id)
@@ -119,6 +127,13 @@ namespace BullBeez.Data.Repositories
                 .Include(a => a.CompanyAndPersonOccupation).ThenInclude(cs => cs.Occupation)
                 .Include(a => a.CompanyType)
                  .Include(a => a.CompanyLevel).Where(x => x.RowStatu == EnumRowStatusType.Active && toUserIdList.Contains(x.Id) || toUserIdList2.Contains(x.Id)).ToListAsync();
+        }
+
+        public async Task<CompanyAndPerson> GetCompanyAndPersonPostDetailById(int id)
+        {
+            return await BullBeezDBContext.CompanyAndPersons.Where(x => x.RowStatu == EnumRowStatusType.Active && x.Id == id)
+                .Include(a => a.CompanyAndPersonOccupation).ThenInclude(cs => cs.Occupation)
+                .Include(a => a.CompanyType).FirstOrDefaultAsync();
         }
     }
 }

@@ -12,6 +12,7 @@ namespace BullBeez.Core.Services
     {
         Task<ApiResult<List<ServiceListResponse>>> GetServiceList();
         Task<ApiResult<List<PackageResponse>>> GetPackageList();
+        Task<ApiResult<GetUserPackageDetail>> GetPackageUserById(int userId);
         Task<ApiResult<ServiceListResponse>> GetServiceById(int id);
         Task<ApiResult<CreatePayment>> CreatePayment(ServiceAnswerRequest request);
         Task<ApiResult<CreatePayment>> CreatePackagePayment(CreatePackagePaymentRequest request);

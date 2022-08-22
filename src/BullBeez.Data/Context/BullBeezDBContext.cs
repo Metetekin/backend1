@@ -47,6 +47,7 @@ namespace BullBeez.Data.Context
         public DbSet<PostComments> PostComments { get; set; }
         public DbSet<Package> Packages { get; set; }
         public DbSet<PackagePayments> PackagePayments { get; set; }
+        public DbSet<PostReport> PostReport { get; set; }
         
         public BullBeezDBContext(DbContextOptions<BullBeezDBContext> options)
             : base(options)
@@ -100,6 +101,8 @@ namespace BullBeez.Data.Context
                 .ApplyConfiguration(new UserPostsConfiguration());
             builder
                 .ApplyConfiguration(new PostCommentsConfiguration());
+            builder
+                .ApplyConfiguration(new PostReportConfigurations());
         }
     }
 

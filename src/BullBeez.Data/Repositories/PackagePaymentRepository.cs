@@ -32,6 +32,11 @@ namespace BullBeez.Data.Repositories
             return await BullBeezDBContext.PackagePayments.Where(x => x.RowStatu == EnumRowStatusType.Active).OrderByDescending(x => x.Id).Skip(request.Offset).Take(request.Limit).ToListAsync();
         }
 
+        public async Task<IEnumerable<PackagePayments>> GetUserPayPackageList(int userId)
+        {
+            return await BullBeezDBContext.PackagePayments.Where(x => x.RowStatu == EnumRowStatusType.Active && x.CompanyAndPerson.Id == userId).OrderByDescending(x=> x.InsertedDate).ToListAsync();
+        }
+
         public async Task<IEnumerable<PackagePayments>> GetAll()
         {
             return await base.Find(x => x.RowStatu == EnumRowStatusType.Active);

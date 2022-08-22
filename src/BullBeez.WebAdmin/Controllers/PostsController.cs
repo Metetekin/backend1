@@ -1,4 +1,6 @@
-﻿using BullBeez.WebAdmin.Models;
+﻿using BullBeez.WebAdmin.Classed;
+using BullBeez.WebAdmin.Models;
+using BullBeez.WebAdmin.RequestDTO;
 using BullBeez.WebAdmin.ResponseDTO;
 
 using Newtonsoft.Json;
@@ -16,10 +18,13 @@ using System.Web.Script.Serialization;
 
 namespace BullBeez.WebAdmin.Controllers
 {
+    [CustomAuthorizeAttribute]
     public class PostsController : Controller
     {
         static readonly HttpClient client = new HttpClient();
-        private static string baseUrl = "https://localhost:44340/api/WebAdminService/";
+        private static string baseUrl = "https://bullbeezapi.co/api/WebAdminService/";
+
+        //private static string baseUrl = "https://localhost:44340/api/WebAdminService/";       
         private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
         // GET: Posts
         public ActionResult Index()
@@ -50,6 +55,61 @@ namespace BullBeez.WebAdmin.Controllers
             datas.data = response;
             datas.recordsFiltered = response.FirstOrDefault().CountData;
             return Json(datas, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<ActionResult> GetPostById(int Id)
+        {
+            var json = _Serializer.Serialize(new {Id= Id });
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var url = baseUrl + "GetUserPostById";
+            var client = new HttpClient();
+
+            var response2 = await client.PostAsync(url, data);
+
+            string result = response2.Content.ReadAsStringAsync().Result;
+            var response = JsonConvert.DeserializeObject<PostDatatableModel>(result);
+
+
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<ActionResult> InsertPost(NewPostRequest request)
+        {
+           
+            var json = _Serializer.Serialize(request);
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var url = baseUrl + "NewPost";
+            var client = new HttpClient();
+
+            var response2 = await client.PostAsync(url, data);
+
+            string result = response2.Content.ReadAsStringAsync().Result;
+            var response = JsonConvert.DeserializeObject<PostDatatableModel>(result);
+
+
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<ActionResult> DeletePost(DeletePostByIdRequest request)
+        {
+            var json = _Serializer.Serialize(request);
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var url = baseUrl + "DeletePostById";
+            var client = new HttpClient();
+
+            var response2 = await client.PostAsync(url, data);
+
+            string result = response2.Content.ReadAsStringAsync().Result;
+            var response = JsonConvert.DeserializeObject<PostDatatableModel>(result);
+
+
+            return Json(response, JsonRequestBehavior.AllowGet);
         }
     }
 }

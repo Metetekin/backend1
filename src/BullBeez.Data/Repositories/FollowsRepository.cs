@@ -81,6 +81,16 @@ namespace BullBeez.Data.Repositories
             return (IEnumerable<Follows>)responseList;
         }
 
+        public async Task<IEnumerable<string>> GetFollowUserToken(int userId)
+        {
+            var responseList = await BullBeezDBContext.Follows.Where(x => x.RowStatu == EnumRowStatusType.Active && x.ToUserId == userId && x.FollowType == EnumFollowType.Follows )
+                .Include(a => a.CompanyAndPerson).ThenInclude(c => c.Tokens.OrderByDescending(x=> x.Id).Take(1)).ToListAsync();
+
+            var listData = responseList.Select(x => x.CompanyAndPerson.Tokens.FirstOrDefault().FirebaseToken).ToList();
+
+            return listData;
+        }
+
         public async ValueTask<Follows> GetById(int id)
         {
             return await base.SingleOrDefaultAsync(x=> x.Id == id && x.RowStatu == EnumRowStatusType.Active);

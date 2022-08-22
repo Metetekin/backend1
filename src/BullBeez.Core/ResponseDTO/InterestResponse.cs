@@ -9,6 +9,7 @@ namespace BullBeez.Core.ResponseDTO
         public int Id { get; set; }
         public string HashId { get; set; }
         public string Name { get; set; }
+        public string Title { get; set; }
         public int IsSelected { get; set; }
         public int RowStatu { get; set; }
     }

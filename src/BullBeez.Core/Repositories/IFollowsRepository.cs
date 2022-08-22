@@ -15,6 +15,7 @@ namespace BullBeez.Core.Repositories
         Task<IEnumerable<Follows>> GetAllFilter(Expression<Func<Follows, bool>> predicate);
         Task<IEnumerable<Follows>> GetAllFilterAndUserWorker(Expression<Func<Follows, bool>> predicate);
         Task<IEnumerable<Follows>> GetAllFilterAndUserWorkerWaiting(Expression<Func<Follows, bool>> predicate);
+        Task<IEnumerable<string>> GetFollowUserToken(int userId);
         Task<IEnumerable<Follows>> GetAllFilterAndUserFollow(Expression<Func<Follows, bool>> predicate);
     }
 }

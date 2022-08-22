@@ -4,12 +4,12 @@ using System.Text;
 
 namespace BullBeez.Core.RequestDTO.WebUIRequest
 {
-  public class GetUsersRequestDTO
-  {
-    public int take { get; set; }
-    public int skip { get; set; }
-    public string search { get; set; }
-    public int[] CompanyAndUserIds { get; set; } 
-   }
-  
+    public class GetUsersRequestDTO
+    {
+        public int Id { get; set; }
+        public int take { get; set; }
+        public int skip { get; set; }
+        public string search { get; set; }
+        public int[] CompanyAndUserIds { get; set; }
+    }
 }

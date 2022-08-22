@@ -42,6 +42,7 @@ namespace BullBeez.Core.ResponseDTO
         public string CompanyDescription { get; set; }
         public int WorkerCount { get; set; }
         public List<GetFollowUserByUserIdResponse> WorkerList { get; set; }
-
+        public int MailPermission { get; set; }
+        public string BannerImage { get; set; }
 }
 }

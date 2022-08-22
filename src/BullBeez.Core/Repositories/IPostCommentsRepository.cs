@@ -12,5 +12,7 @@ namespace BullBeez.Core.Repositories
         Task<IEnumerable<PostComments>> GetAll();
         ValueTask<PostComments> GetById(int id);
         Task<IEnumerable<PostComments>> GetAllFilter(Expression<Func<PostComments, bool>> predicate);
+        Task<IEnumerable<PostComments>> GetByOffset(int PostId, int StartIdx, int Count);
+
     }
 }

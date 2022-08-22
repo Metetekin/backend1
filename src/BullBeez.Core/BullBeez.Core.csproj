@@ -7,10 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="RequestDTO\WebUIRequest\Auth\" />
+    <PackageReference Include="RestSharp" Version="106.15.0" />
   </ItemGroup>
 
 </Project>

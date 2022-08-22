@@ -14,9 +14,11 @@ namespace BullBeez.WebAdmin.ResponseDTO
         public string GSM { get; set; }
         public string ServiceName { get; set; }
         public decimal Amount { get; set; }
+        public string question { get; set; }
         public string Question { get; set; }
         public string Option { get; set; }
         public string TextCevap { get; set; }
+        public DateTime inserteddate { get; set; }
         public string Inserteddate { get; set; }
         public string IsPayment { get; set; }
     }

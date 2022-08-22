@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card" style="padding:20px;">
+            <div class="card-body">
+                <!-- title -->
+                <div class="d-md-flex">
+                    <div class="ms-auto">
+                        <div class="dl">
+                        </div>
+                    </div>
+                </div>
+                <!-- title -->
+            </div>
+            <div class="table-responsive" style="min-width:90%">
+                <div class="card-body">
+                    <form class="form-horizontal form-material mx-2" id="frmModal">
+                        <div class="form-group">
+                            <label class="col-md-12">Title</label>
+                            <div class="col-md-12">
+                                <input type="text" name="Title" id="Title" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Body</label>
+                            <div class="col-md-12">
+                                <input type="text" name="Body" id="Body" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Kullanıcı</label>
+                            <div class="col-md-12">
+                                <select class="form-select shadow-none form-control-line" name="CompanyAndPersonId" id="CompanyAndPersonId">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Cinsiyet</label>
+                            <div class="col-md-12">
+                                <select class="form-select shadow-none form-control-line" name="Gender">
+                                    <option value="-1">Tümü</option>
+                                    <option value="0">Kadın</option>
+                                    <option value="1">Erkek</option>
+                                    <option value="2">Firma</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Telefon Markası</label>
+                            <div class="col-md-12">
+                                <select class="form-select shadow-none form-control-line" name="PhoneMark">
+                                    <option value="0">Tümü</option>
+                                    <option value="1">IPhone</option>
+                                    <option value="2">Android</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Hesap Türü</label>
+                            <div class="col-md-12">
+                                <select class="form-select shadow-none form-control-line" name="ProfileType">
+                                    <option value="0">Tümü</option>
+                                    <option value="1">Kişisel</option>
+                                    <option value="2">Kurumsal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-12">Yaş Aralığı (Bitiş tarihine 0 girerseniz tüm herkese gönderir.)</label>
+                            <div class="col-md-3">
+                                <input type="number" name="StartYear" id="StartYear" value="0" class="form-control form-control-line">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="number" name="EndYear" id="EndYear" value="100" class="form-control form-control-line">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Meslek (Birden fazla seçmek için ctrl tuşuna basılı tutun ve seçiniz. Hepsi için seçim yapmayınız.)</label>
+                            <div class="col-md-12">
+                                <select class="form-select shadow-none form-control-line" name="Occupations" id="Occupations" multiple>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Şirket Türü</label>
+                            <div class="col-md-12">
+                                <select class="form-select shadow-none form-control-line" name="CompanyType" id="CompanyType" multiple>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="SendNotification()" class="btn btn-primary">Gönder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            SetOccupations();
+            SetCompanyType();
+            SetUsers();
+        });
+
+        function SetOccupations() {
+            $.ajax({
+                url: "/Occupation/GetOccupationListSelect",
+                type: "Post"
+            }).done(function (response) {
+
+                var $ddlHtml = '';
+                
+                $.each(response, function (i, item) {
+
+                    $ddlHtml += '<option value="' + item.Id + '">' + item.Name + '</option>';
+                });
+                $('#Occupations').append($ddlHtml);
+
+            });
+        }
+
+        function SetCompanyType() {
+            $.ajax({
+                url: "/CompanyType/GetCompanyTypeListSelect",
+                type: "Post"
+            }).done(function (response) {
+
+                var $ddlHtml = '';
+
+                $.each(response, function (i, item) {
+
+                    $ddlHtml += '<option value="' + item.Id + '">' + item.Name + '</option>';
+                });
+                $('#CompanyType').append($ddlHtml);
+
+            });
+        }
+
+        function SendNotification() {
+            var form = $("#frmModal");
+            var param = form.serializeArray();
+            $.ajax({
+                url: "/Notification/SendNotification",
+                type: "Post",
+                data: param
+            }).done(function (response) {
+                $('#mymodal').modal('hide');
+                LoadDataSource();
+            });
+
+        }
+
+        function SetUsers() {
+            $.ajax({
+                url: "/Users/GetUsersList",
+                type: "Post"
+            }).done(function (response) {
+
+                var $ddlHtml = '';
+                $ddlHtml += '<option value="0">Tümü</option>';
+                $.each(response, function (i, item) {
+
+                    $ddlHtml += '<option value="' + item.Id + '">' + item.NameOrTitle + '</option>';
+                });
+                $('#CompanyAndPersonId').append($ddlHtml);
+
+            });
+        }
+
+    </script>
+}
+
