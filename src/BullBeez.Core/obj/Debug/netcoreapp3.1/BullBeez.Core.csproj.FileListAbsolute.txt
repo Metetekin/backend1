@@ -116,3 +116,13 @@ C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Cor
 C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.dll
 C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.pdb
 C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.csprojAssemblyReference.cache
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\bin\Debug\netcoreapp3.1\BullBeez.Core.deps.json
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.csproj.AssemblyReference.cache
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.AssemblyInfoInputs.cache
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.AssemblyInfo.cs
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.csproj.CoreCompileInputs.cache
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Core\obj\Debug\netcoreapp3.1\BullBeez.Core.pdb

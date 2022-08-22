@@ -47,11 +47,11 @@ namespace BullBeez.Data.UOW
         private IPackageRepository _packageRepository;
         private Dictionary<Type, object> repositories;
         private IPostReportRepository _postReportRepository;
-        public UnitOfWork(BullBeezDBContext context)
+       public UnitOfWork(BullBeezDBContext context)
         {
             this._context = context;
         }
-
+      
         public ICompanyAndPersonRepository CompanyAndPersons => _companyAndPersonRepository = _companyAndPersonRepository ?? new CompanyAndPersonRepository(_context);
         public ITokenRepository Tokens => _tokenRepository = _tokenRepository ?? new TokenRepository(_context);
         public IMailApprovedCodeRepository MailApprovedCodes => _mailApprovedCodeRepository = _mailApprovedCodeRepository ?? new MailApprovedCodeRepository(_context);

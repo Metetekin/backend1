@@ -155,3 +155,16 @@ C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Ser
 C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
 C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
 C:\Users\Administrator\Desktop\publish\02.12.2021\BullBeezEFApi\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.deps.json
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Service.pdb
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.dll
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\bin\Debug\netcoreapp3.1\BullBeez.Core.pdb
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.AssemblyReference.cache
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfoInputs.cache
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.AssemblyInfo.cs
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CoreCompileInputs.cache
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.csproj.CopyComplete
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.dll
+C:\Users\baran.polat\Desktop\bullbezz\src\BullBeez.Service\obj\Debug\netcoreapp3.1\BullBeez.Service.pdb

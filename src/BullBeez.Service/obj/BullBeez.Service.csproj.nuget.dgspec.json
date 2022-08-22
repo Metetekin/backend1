@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj": {}
+    "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj": {}
   },
   "projects": {
-    "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
+    "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj",
         "projectName": "BullBeez.Core",
-        "projectPath": "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj",
-        "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
-        "outputPath": "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Core\\obj\\",
+        "projectPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj",
+        "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MONSTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\baran.polat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {},
+          "http://nuget.subservis.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -59,7 +60,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,21 +70,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
+    "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj",
+        "projectUniqueName": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj",
         "projectName": "BullBeez.Service",
-        "projectPath": "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Service\\BullBeez.Service.csproj",
-        "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
-        "outputPath": "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Service\\obj\\",
+        "projectPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\BullBeez.Service.csproj",
+        "packagesPath": "C:\\Users\\baran.polat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MONSTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\baran.polat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,14 +92,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {},
+          "http://nuget.subservis.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
-                "projectPath": "D:\\Bullbeez\\BullBeezEFApi\\src\\BullBeez.Core\\BullBeez.Core.csproj"
+              "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj": {
+                "projectPath": "C:\\Users\\baran.polat\\Desktop\\bullbezz\\src\\BullBeez.Core\\BullBeez.Core.csproj"
               }
             }
           }
@@ -131,6 +134,22 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.11.1, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.7.*, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.7.*, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.7.*, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.7.*, )"
             }
           },
           "imports": [
@@ -139,7 +158,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -148,7 +168,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
