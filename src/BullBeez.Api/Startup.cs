@@ -52,8 +52,8 @@ namespace BullBeez.Api
 			services.AddScoped<IServiceService, ServiceService>();
 			services.AddScoped<INotificationHelper, NotificationHelper>();
 			services.AddScoped<ISmsService, SmsService>();
-			services.AddDbContext<BullBeezDBContext>();
-			services.AddSingleton<TwitterBatch>();
+			//services.AddDbContext<BullBeezDBContext>();
+			 services.AddSingleton<TwitterBatch>();
 			//services.AddHostedService<TwitterBatch>(provider => provider.GetService<TwitterBatch>());
 			string mySqlConnectionStr = Configuration.GetConnectionString("DevConnection");
 			//services.AddDbContext<BullBeezDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection3")), ServiceLifetime.Transient);
@@ -89,7 +89,7 @@ namespace BullBeez.Api
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
-			UpdateDatabase(app);
+			//UpdateDatabase(app);
 
 			if (env.IsDevelopment())
 			{
