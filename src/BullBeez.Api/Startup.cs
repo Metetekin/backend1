@@ -46,18 +46,25 @@ namespace BullBeez.Api
 
 			services.AddControllers();
 			services.AddScoped<IUnitOfWork, UnitOfWork>();
-			services.AddScoped<IExternalAuthHelper, ExternalAuthHelper>();
 			services.AddScoped<ICompanyAndPersonService, CompanyAndPersonService>();
 			services.AddScoped<ICommonService, CommonService>();
 			services.AddScoped<IServiceService, ServiceService>();
 			services.AddScoped<INotificationHelper, NotificationHelper>();
 			services.AddScoped<ISmsService, SmsService>();
-			//services.AddDbContext<BullBeezDBContext>();
-			services.AddSingleton<TwitterBatch>();
-			//services.AddHostedService<TwitterBatch>(provider => provider.GetService<TwitterBatch>());
-			string mySqlConnectionStr = Configuration.GetConnectionString("DevConnection");
-			//services.AddDbContext<BullBeezDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection3")), ServiceLifetime.Transient);
-			services.AddDbContext<BullBeezDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+#if !DEBUG
+		services.AddSingleton<TwitterBatch>();
+		services.AddHostedService<TwitterBatch>(provider => provider.GetService<TwitterBatch>());
+		string mySqlConnectionStr = Configuration.GetConnectionString("DevConnection");
+		//services.AddDbContext<BullBeezDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection2")), ServiceLifetime.Transient);
+		services.AddDbContext<BullBeezDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+#endif
+
+#if DEBUG
+			services.AddDbContext<BullBeezDBContext>(opt => opt.UseSqlServer("Server=.;Initial Catalog=BullBezz;uid =sa;pwd=123;MultipleActiveResultSets=True;"));
+#endif
+
+
+
 
 
 			services.AddControllersWithViews().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
@@ -87,13 +94,16 @@ namespace BullBeez.Api
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env,BullBeezDBContext context)
 		{
-			//UpdateDatabase(app);
+#if !DEBUG
+		UpdateDatabase(app);
+#endif
+
 
 			if (env.IsDevelopment())
 			{
-				//db.Database.EnsureCreated();
+				//context.Database.EnsureCreated();
 				app.UseDeveloperExceptionPage();
 				app.UseSwagger();
 				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BullBeez.Api v1"));
@@ -111,8 +121,8 @@ namespace BullBeez.Api
 			{
 				endpoints.MapControllers();
 				endpoints.MapControllerRoute(
-									name: "default",
-									pattern: "{controller=Home}/{action=Index}/{id?}");
+						name: "default",
+						pattern: "{controller=Home}/{action=Index}/{id?}");
 			});
 		}
 

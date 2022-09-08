@@ -2903,12 +2903,10 @@ namespace BullBeez.Service
             foreach (var item in response)
             {
                 PostDatatableModel obj = new PostDatatableModel();
-                obj.Id = item.Id;
                 obj.PostText = item.PostText;
                 obj.PostMedia = item.PostMedia;
                 obj.NameOrTitle = item.CompanyAndPerson.NameOrTitle;
                 obj.CountData = count;
-                obj.CompanyAndPersonId = item.CompanyAndPerson.Id;
                 responseList.Add(obj);
 
             }
